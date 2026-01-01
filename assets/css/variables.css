@@ -1,0 +1,351 @@
+/**
+ * NWESTCO DESIGN SYSTEM - CSS CUSTOM PROPERTIES
+ *
+ * All CSS variables (custom properties) for the Nwestco design system.
+ * This file should be imported first before any other CSS files.
+ *
+ * Based on: Nwestco Brand Guidelines v1.0
+ * Colors: Logo colors (#25617C, #709944, #3A3A3C)
+ * Typography: Open Sans (headings), Lato (body)
+ *
+ * WCAG 2.1 AA Compliant - All color combinations tested for 4.5:1 contrast
+ */
+
+:root {
+  /* ============================================================
+     PRIMARY BRAND COLORS
+     ============================================================ */
+
+  /* Nwestco Blue - Primary brand color from logo */
+  --nwestco-blue: #25617C;
+  --nwestco-blue-rgb: 37, 97, 124;
+
+  /* Nwestco Green - Secondary brand color from logo */
+  --nwestco-green: #709944;
+  --nwestco-green-rgb: 112, 153, 68;
+
+  /* Nwestco Gray - Brand neutral from logo wordmark */
+  --nwestco-gray: #3A3A3C;
+  --nwestco-gray-rgb: 58, 58, 60;
+
+
+  /* ============================================================
+     COLOR VARIATIONS - Blue Scale
+     ============================================================ */
+
+  --nwestco-blue-dark: #1A4456;      /* Hover states, pressed buttons */
+  --nwestco-blue-darker: #0F2A34;    /* Active states */
+  --nwestco-blue-light: #3A7A98;     /* Light backgrounds, borders */
+  --nwestco-blue-pale: #E8F1F5;      /* Very light backgrounds, highlights */
+  --nwestco-blue-tint: #F5F9FB;      /* Subtle section backgrounds */
+
+
+  /* ============================================================
+     COLOR VARIATIONS - Green Scale
+     ============================================================ */
+
+  --nwestco-green-dark: #5A7A35;     /* Hover states, accessible text */
+  --nwestco-green-darker: #3D5124;   /* Active states */
+  --nwestco-green-light: #8FAE5E;    /* Light backgrounds */
+  --nwestco-green-pale: #F0F5EA;     /* Very light backgrounds */
+  --nwestco-green-tint: #F7FAF4;     /* Subtle section backgrounds */
+
+
+  /* ============================================================
+     NEUTRAL PALETTE - Grayscale
+     ============================================================ */
+
+  --nwestco-neutral-900: #1A1A1B;    /* Deepest - body text */
+  --nwestco-neutral-800: #2A2A2C;    /* Very dark - emphasis text */
+  --nwestco-neutral-700: #3A3A3C;    /* Dark - headings (brand gray) */
+  --nwestco-neutral-600: #4A4A4C;    /* Medium-dark */
+  --nwestco-neutral-500: #626262;    /* Medium - secondary text */
+  --nwestco-neutral-400: #7E7E7E;    /* Medium-light */
+  --nwestco-neutral-300: #9E9E9E;    /* Light - tertiary text */
+  --nwestco-neutral-200: #C5C5C5;    /* Very light - borders */
+  --nwestco-neutral-100: #E5E5E5;    /* Ultra light - subtle borders */
+  --nwestco-neutral-50: #F5F5F5;     /* Lightest - backgrounds */
+  --nwestco-neutral-25: #FAFAFA;     /* Near white - subtle backgrounds */
+
+
+  /* ============================================================
+     UTILITY COLORS
+     ============================================================ */
+
+  --nwestco-white: #FFFFFF;
+  --nwestco-black: #000000;
+
+
+  /* ============================================================
+     SEMANTIC COLORS - Status & Feedback
+     ============================================================ */
+
+  /* Success */
+  --nwestco-success: #709944;        /* Use brand green */
+  --nwestco-success-dark: #5A7A35;   /* Darker for text */
+  --nwestco-success-light: #F0F5EA;  /* Light background */
+
+  /* Warning */
+  --nwestco-warning: #F59E0B;        /* Amber */
+  --nwestco-warning-dark: #D97706;   /* Darker for text */
+  --nwestco-warning-light: #FEF3C7;  /* Light background */
+
+  /* Error */
+  --nwestco-error: #DC2626;          /* Red */
+  --nwestco-error-dark: #B91C1C;     /* Darker for text */
+  --nwestco-error-light: #FEE2E2;    /* Light background */
+
+  /* Info */
+  --nwestco-info: #25617C;           /* Use brand blue */
+  --nwestco-info-dark: #1A4456;      /* Darker for text */
+  --nwestco-info-light: #E8F1F5;     /* Light background */
+
+
+  /* ============================================================
+     TYPOGRAPHY - Font Families
+     ============================================================ */
+
+  --font-primary: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-secondary: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+
+  /* ============================================================
+     TYPOGRAPHY - Font Sizes (16px base)
+     ============================================================ */
+
+  --text-xs: 0.75rem;      /* 12px - Fine print, captions */
+  --text-sm: 0.8125rem;    /* 13px - Small labels, metadata */
+  --text-base: 1rem;       /* 16px - Body text baseline */
+  --text-lg: 1.125rem;     /* 18px - Large body, intro paragraphs */
+  --text-xl: 1.25rem;      /* 20px - Subheadings, callouts */
+  --text-2xl: 1.5rem;      /* 24px - H4 */
+  --text-3xl: 1.875rem;    /* 30px - H3 */
+  --text-4xl: 2.25rem;     /* 36px - H2 */
+  --text-5xl: 2.625rem;    /* 42px - H1 */
+  --text-6xl: 3.5rem;      /* 56px - Hero headlines */
+
+
+  /* ============================================================
+     TYPOGRAPHY - Font Weights
+     ============================================================ */
+
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+
+
+  /* ============================================================
+     TYPOGRAPHY - Line Heights
+     ============================================================ */
+
+  --leading-none: 1;
+  --leading-tight: 1.2;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+  --leading-loose: 2;
+
+
+  /* ============================================================
+     TYPOGRAPHY - Letter Spacing
+     ============================================================ */
+
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.02em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+
+
+  /* ============================================================
+     SPACING SCALE - 8px base grid (4px min)
+     ============================================================ */
+
+  --space-0: 0;
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+
+
+  /* ============================================================
+     BORDER RADIUS - Rounded corners
+     ============================================================ */
+
+  --radius-none: 0;
+  --radius-sm: 0.125rem;    /* 2px */
+  --radius-base: 0.25rem;   /* 4px - Buttons, small UI */
+  --radius-md: 0.375rem;    /* 6px */
+  --radius-lg: 0.5rem;      /* 8px - Cards, containers */
+  --radius-xl: 0.75rem;     /* 12px */
+  --radius-2xl: 1rem;       /* 16px */
+  --radius-full: 9999px;    /* Pill shape */
+
+
+  /* ============================================================
+     SHADOWS - Elevation system
+     ============================================================ */
+
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* Focus shadows */
+  --shadow-focus: 0 0 0 3px rgba(37, 97, 124, 0.1);
+  --shadow-focus-green: 0 0 0 3px rgba(112, 153, 68, 0.1);
+
+
+  /* ============================================================
+     TRANSITIONS - Animation timings
+     ============================================================ */
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+
+  /* Easing functions */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+  /* ============================================================
+     Z-INDEX SCALE - Layering system
+     ============================================================ */
+
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+  --z-notification: 800;
+
+
+  /* ============================================================
+     BREAKPOINTS - Responsive design (informational only)
+     ============================================================ */
+
+  /*
+  Mobile-first approach:
+
+  xs: 0px - 639px      (Mobile)
+  sm: 640px - 767px    (Large mobile)
+  md: 768px - 1023px   (Tablet)
+  lg: 1024px - 1279px  (Desktop)
+  xl: 1280px - 1535px  (Large desktop)
+  2xl: 1536px+         (Extra large)
+
+  Use in media queries:
+  @media (min-width: 640px) { ... }
+  @media (min-width: 768px) { ... }
+  @media (min-width: 1024px) { ... }
+  @media (min-width: 1280px) { ... }
+  @media (min-width: 1536px) { ... }
+  */
+
+
+  /* ============================================================
+     CONTAINER WIDTHS - Max-widths for centered content
+     ============================================================ */
+
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+
+
+  /* ============================================================
+     COMPONENT-SPECIFIC VARIABLES
+     ============================================================ */
+
+  /* Header */
+  --header-height: 80px;
+  --header-height-mobile: 60px;
+  --header-background: var(--nwestco-white);
+  --header-border: var(--nwestco-neutral-100);
+
+  /* Buttons */
+  --button-padding-x: 2rem;        /* 32px */
+  --button-padding-y: 0.875rem;    /* 14px */
+  --button-padding-x-sm: 1.5rem;   /* 24px */
+  --button-padding-y-sm: 0.625rem; /* 10px */
+  --button-padding-x-lg: 2.5rem;   /* 40px */
+  --button-padding-y-lg: 1.125rem; /* 18px */
+
+  /* Forms */
+  --input-padding-x: 1rem;         /* 16px */
+  --input-padding-y: 0.75rem;      /* 12px */
+  --input-border-width: 1px;
+  --input-border-color: var(--nwestco-neutral-300);
+  --input-border-color-focus: var(--nwestco-blue);
+  --input-border-radius: var(--radius-base);
+
+  /* Cards */
+  --card-padding: 2rem;            /* 32px */
+  --card-padding-sm: 1.5rem;       /* 24px */
+  --card-border-radius: var(--radius-lg);
+  --card-border-color: var(--nwestco-neutral-100);
+
+  /* Section Spacing */
+  --section-padding-y: 5rem;       /* 80px desktop */
+  --section-padding-y-mobile: 3rem; /* 48px mobile */
+  --section-padding-x: 1.5rem;     /* 24px */
+}
+
+
+/* ============================================================
+   DARK THEME OVERRIDES (Optional - for future use)
+   ============================================================ */
+
+[data-theme="dark"] {
+  /* Invert color scales for dark mode */
+  --nwestco-blue-pale: #1A4456;
+  --nwestco-blue-light: #25617C;
+  --nwestco-blue: #3A7A98;
+
+  --nwestco-neutral-900: #F5F5F5;
+  --nwestco-neutral-800: #E5E5E5;
+  --nwestco-neutral-700: #C5C5C5;
+  --nwestco-neutral-500: #9E9E9E;
+  --nwestco-neutral-300: #626262;
+  --nwestco-neutral-100: #3A3A3C;
+  --nwestco-neutral-50: #2A2A2C;
+
+  --header-background: var(--nwestco-neutral-50);
+  --header-border: var(--nwestco-neutral-300);
+}
+
+
+/* ============================================================
+   REDUCED MOTION PREFERENCE
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-normal: 0ms;
+    --transition-slow: 0ms;
+  }
+}

@@ -1,0 +1,467 @@
+/**
+ * NWESTCO DESIGN SYSTEM - TYPOGRAPHY
+ *
+ * Typography system implementing:
+ * - Open Sans for headings and UI elements
+ * - Lato for body copy and paragraphs
+ * - Responsive font sizing
+ * - WCAG AA accessible text styles
+ *
+ * Font Import (add to HTML <head>):
+ * <link rel="preconnect" href="https://fonts.googleapis.com">
+ * <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ * <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+ */
+
+
+/* ============================================================
+   BODY TEXT DEFAULTS
+   ============================================================ */
+
+body {
+  font-family: var(--font-secondary);
+  font-size: var(--text-base);      /* 16px */
+  font-weight: var(--font-normal);  /* 400 */
+  line-height: var(--leading-relaxed); /* 1.75 */
+  color: var(--nwestco-neutral-900);
+}
+
+
+/* ============================================================
+   HEADINGS - Open Sans
+   ============================================================ */
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-tight);
+  color: var(--nwestco-gray);
+  margin-bottom: 1rem;
+}
+
+h1, .h1 {
+  font-size: var(--text-5xl);         /* 42px */
+  font-weight: var(--font-bold);      /* 700 */
+  letter-spacing: var(--tracking-tight);
+  margin-bottom: 1.5rem;
+}
+
+h2, .h2 {
+  font-size: var(--text-4xl);         /* 36px */
+  font-weight: var(--font-semibold);  /* 600 */
+  margin-bottom: 1.25rem;
+}
+
+h3, .h3 {
+  font-size: var(--text-3xl);         /* 30px */
+  font-weight: var(--font-semibold);  /* 600 */
+  line-height: var(--leading-normal);
+  margin-bottom: 1rem;
+}
+
+h4, .h4 {
+  font-size: var(--text-2xl);         /* 24px */
+  font-weight: var(--font-semibold);  /* 600 */
+  line-height: var(--leading-normal);
+  margin-bottom: 0.75rem;
+}
+
+h5, .h5 {
+  font-size: var(--text-xl);          /* 20px */
+  font-weight: var(--font-semibold);  /* 600 */
+  line-height: var(--leading-normal);
+  margin-bottom: 0.5rem;
+}
+
+h6, .h6 {
+  font-size: var(--text-base);        /* 16px */
+  font-weight: var(--font-bold);      /* 700 */
+  line-height: var(--leading-normal);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  margin-bottom: 0.5rem;
+}
+
+
+/* ============================================================
+   HERO HEADLINE - Extra large display text
+   ============================================================ */
+
+.hero-headline {
+  font-family: var(--font-primary);
+  font-size: var(--text-6xl);          /* 56px */
+  font-weight: var(--font-extrabold);  /* 800 */
+  line-height: var(--leading-tight);   /* 1.2 */
+  letter-spacing: var(--tracking-tight);
+  color: var(--nwestco-gray);
+  margin-bottom: 1.5rem;
+}
+
+
+/* ============================================================
+   BODY TEXT STYLES - Lato
+   ============================================================ */
+
+p, .body-text {
+  font-family: var(--font-secondary);
+  font-size: var(--text-base);        /* 16px */
+  font-weight: var(--font-normal);    /* 400 */
+  line-height: var(--leading-relaxed); /* 1.75 */
+  color: var(--nwestco-neutral-900);
+  margin-bottom: 1rem;
+}
+
+/* Last paragraph in a block */
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Lead text - Intro paragraphs */
+.lead-text,
+.text-lead {
+  font-size: var(--text-lg);          /* 18px */
+  font-weight: var(--font-normal);    /* 400 */
+  line-height: var(--leading-relaxed);
+  color: var(--nwestco-neutral-900);
+  margin-bottom: 1.5rem;
+}
+
+/* Small text */
+.small-text,
+.text-small {
+  font-size: var(--text-sm);          /* 13px */
+  font-weight: var(--font-normal);
+  line-height: var(--leading-normal);
+  color: var(--nwestco-neutral-500);
+}
+
+/* Extra small text - Captions */
+.caption,
+.text-caption {
+  font-size: var(--text-xs);          /* 12px */
+  font-weight: var(--font-normal);
+  line-height: var(--leading-normal);
+  color: var(--nwestco-neutral-500);
+}
+
+
+/* ============================================================
+   SPECIAL TEXT STYLES
+   ============================================================ */
+
+/* Section label - Uppercase eyebrow */
+.section-label {
+  font-family: var(--font-primary);
+  font-size: var(--text-sm);          /* 13px */
+  font-weight: var(--font-bold);      /* 700 */
+  line-height: var(--leading-normal);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--nwestco-blue);
+  margin-bottom: 0.5rem;
+}
+
+/* Overline - Small uppercase text above headline */
+.overline {
+  font-family: var(--font-primary);
+  font-size: var(--text-xs);          /* 12px */
+  font-weight: var(--font-bold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--nwestco-neutral-500);
+  margin-bottom: 0.25rem;
+}
+
+/* Subtitle - Below headline */
+.subtitle {
+  font-family: var(--font-secondary);
+  font-size: var(--text-xl);          /* 20px */
+  font-weight: var(--font-normal);
+  line-height: var(--leading-normal);
+  color: var(--nwestco-neutral-600);
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+/* ============================================================
+   TEXT UTILITIES - Size variants
+   ============================================================ */
+
+.text-xs { font-size: var(--text-xs); }      /* 12px */
+.text-sm { font-size: var(--text-sm); }      /* 13px */
+.text-base { font-size: var(--text-base); }  /* 16px */
+.text-lg { font-size: var(--text-lg); }      /* 18px */
+.text-xl { font-size: var(--text-xl); }      /* 20px */
+.text-2xl { font-size: var(--text-2xl); }    /* 24px */
+.text-3xl { font-size: var(--text-3xl); }    /* 30px */
+.text-4xl { font-size: var(--text-4xl); }    /* 36px */
+.text-5xl { font-size: var(--text-5xl); }    /* 42px */
+.text-6xl { font-size: var(--text-6xl); }    /* 56px */
+
+
+/* ============================================================
+   FONT WEIGHT UTILITIES
+   ============================================================ */
+
+.font-light { font-weight: var(--font-light); }         /* 300 */
+.font-normal { font-weight: var(--font-normal); }       /* 400 */
+.font-medium { font-weight: var(--font-medium); }       /* 500 */
+.font-semibold { font-weight: var(--font-semibold); }   /* 600 */
+.font-bold { font-weight: var(--font-bold); }           /* 700 */
+.font-extrabold { font-weight: var(--font-extrabold); } /* 800 */
+.font-black { font-weight: var(--font-black); }         /* 900 */
+
+
+/* ============================================================
+   LINE HEIGHT UTILITIES
+   ============================================================ */
+
+.leading-none { line-height: var(--leading-none); }         /* 1 */
+.leading-tight { line-height: var(--leading-tight); }       /* 1.2 */
+.leading-snug { line-height: var(--leading-snug); }         /* 1.375 */
+.leading-normal { line-height: var(--leading-normal); }     /* 1.5 */
+.leading-relaxed { line-height: var(--leading-relaxed); }   /* 1.75 */
+.leading-loose { line-height: var(--leading-loose); }       /* 2 */
+
+
+/* ============================================================
+   LETTER SPACING UTILITIES
+   ============================================================ */
+
+.tracking-tighter { letter-spacing: var(--tracking-tighter); } /* -0.05em */
+.tracking-tight { letter-spacing: var(--tracking-tight); }     /* -0.02em */
+.tracking-normal { letter-spacing: var(--tracking-normal); }   /* 0 */
+.tracking-wide { letter-spacing: var(--tracking-wide); }       /* 0.02em */
+.tracking-wider { letter-spacing: var(--tracking-wider); }     /* 0.05em */
+.tracking-widest { letter-spacing: var(--tracking-widest); }   /* 0.1em */
+
+
+/* ============================================================
+   TEXT ALIGNMENT
+   ============================================================ */
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+
+/* ============================================================
+   TEXT TRANSFORM
+   ============================================================ */
+
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+.normal-case { text-transform: none; }
+
+
+/* ============================================================
+   TEXT COLOR UTILITIES
+   ============================================================ */
+
+.text-blue { color: var(--nwestco-blue); }
+.text-blue-dark { color: var(--nwestco-blue-dark); }
+.text-green { color: var(--nwestco-green); }
+.text-green-dark { color: var(--nwestco-green-dark); }
+.text-gray { color: var(--nwestco-gray); }
+.text-neutral-900 { color: var(--nwestco-neutral-900); }
+.text-neutral-700 { color: var(--nwestco-neutral-700); }
+.text-neutral-500 { color: var(--nwestco-neutral-500); }
+.text-neutral-300 { color: var(--nwestco-neutral-300); }
+.text-white { color: var(--nwestco-white); }
+
+
+/* ============================================================
+   LINK STYLES
+   ============================================================ */
+
+a,
+.link {
+  color: var(--nwestco-blue);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover,
+.link:hover {
+  color: var(--nwestco-blue-dark);
+  text-decoration: underline;
+}
+
+a:focus-visible,
+.link:focus-visible {
+  outline: 2px solid var(--nwestco-blue);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Link with arrow */
+.link-arrow::after {
+  content: " ’";
+  display: inline-block;
+  transition: transform var(--transition-fast);
+}
+
+.link-arrow:hover::after {
+  transform: translateX(4px);
+}
+
+/* External link indicator */
+.link-external::after {
+  content: " —";
+  display: inline-block;
+  font-size: 0.875em;
+  vertical-align: super;
+}
+
+
+/* ============================================================
+   LISTS
+   ============================================================ */
+
+/* Unordered lists */
+ul:not([class]) {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ul:not([class]) li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+/* Ordered lists */
+ol:not([class]) {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ol:not([class]) li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+/* Styled list with checkmarks */
+.list-checkmark {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-checkmark li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.list-checkmark li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  color: var(--nwestco-green);
+  font-weight: var(--font-bold);
+  font-size: 1.25em;
+}
+
+
+/* ============================================================
+   BLOCKQUOTES
+   ============================================================ */
+
+blockquote {
+  border-left: 4px solid var(--nwestco-blue);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: var(--nwestco-neutral-700);
+}
+
+blockquote p {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 1rem;
+  font-style: normal;
+  font-size: var(--text-sm);
+  color: var(--nwestco-neutral-500);
+}
+
+blockquote cite::before {
+  content: " ";
+}
+
+
+/* ============================================================
+   RESPONSIVE TYPOGRAPHY - Mobile adjustments
+   ============================================================ */
+
+@media (max-width: 768px) {
+  /* Reduce heading sizes on mobile */
+  :root {
+    --text-6xl: 2.5rem;    /* 40px (was 56px) */
+    --text-5xl: 2rem;      /* 32px (was 42px) */
+    --text-4xl: 1.75rem;   /* 28px (was 36px) */
+    --text-3xl: 1.5rem;    /* 24px (was 30px) */
+  }
+
+  h1, .h1,
+  .hero-headline {
+    margin-bottom: 1rem;
+  }
+
+  h2, .h2 {
+    margin-bottom: 1rem;
+  }
+
+  /* Tighten line height on mobile for large text */
+  .hero-headline {
+    line-height: 1.1;
+  }
+}
+
+
+/* ============================================================
+   TEXT TRUNCATION
+   ============================================================ */
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+/* ============================================================
+   WHITESPACE UTILITIES
+   ============================================================ */
+
+.whitespace-normal { white-space: normal; }
+.whitespace-nowrap { white-space: nowrap; }
+.whitespace-pre { white-space: pre; }
+.whitespace-pre-line { white-space: pre-line; }
+.whitespace-pre-wrap { white-space: pre-wrap; }

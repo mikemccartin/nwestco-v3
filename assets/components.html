@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component Showcase - Nwestco Design System</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+
+  <style>
+    /* Component showcase specific styles */
+    .showcase-section {
+      padding: var(--spacing-2xl) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .showcase-section:last-child {
+      border-bottom: none;
+    }
+
+    .component-example {
+      margin: var(--spacing-lg) 0;
+      padding: var(--spacing-lg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      background-color: var(--color-background);
+    }
+
+    .component-code {
+      margin-top: var(--spacing-md);
+      padding: var(--spacing-md);
+      background-color: #f5f5f5;
+      border-radius: var(--radius-sm);
+      overflow-x: auto;
+    }
+
+    .component-code code {
+      font-family: 'Courier New', monospace;
+      font-size: var(--text-sm);
+    }
+
+    .color-swatch {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--color-border);
+    }
+
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: var(--spacing-md);
+      margin-top: var(--spacing-lg);
+    }
+
+    .color-item {
+      text-align: center;
+    }
+
+    .typography-example {
+      margin: var(--spacing-md) 0;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+  <header role="banner" style="background-color: var(--color-primary); color: white; padding: var(--spacing-lg) 0;">
+    <div class="container">
+      <h1 style="color: white;">Nwestco Component Showcase</h1>
+      <p style="color: white; opacity: 0.9;">Design system reference and component library</p>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <!-- Color Palette Section -->
+    <section class="showcase-section">
+      <div class="container">
+        <h2>Color Palette</h2>
+        <p>Base color tokens used throughout the design system. These will be refined by UI-001.</p>
+
+        <div class="color-grid">
+          <div class="color-item">
+            <div class="color-swatch" style="background-color: var(--color-primary);"></div>
+            <p><strong>Primary</strong><br><code>--color-primary</code></p>
+          </div>
+          <div class="color-item">
+            <div class="color-swatch" style="background-color: var(--color-secondary);"></div>
+            <p><strong>Secondary</strong><br><code>--color-secondary</code></p>
+          </div>
+          <div class="color-item">
+            <div class="color-swatch" style="background-color: var(--color-accent);"></div>
+            <p><strong>Accent</strong><br><code>--color-accent</code></p>
+          </div>
+          <div class="color-item">
+            <div class="color-swatch" style="background-color: var(--color-text);"></div>
+            <p><strong>Text</strong><br><code>--color-text</code></p>
+          </div>
+          <div class="color-item">
+            <div class="color-swatch" style="background-color: var(--color-background);"></div>
+            <p><strong>Background</strong><br><code>--color-background</code></p>
+          </div>
+          <div class="color-item">
+            <div class="color-swatch" style="background-color: var(--color-background-alt);"></div>
+            <p><strong>Alt Background</strong><br><code>--color-background-alt</code></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typography Section -->
+    <section class="showcase-section">
+      <div class="container">
+        <h2>Typography</h2>
+        <p>Type scale and font families. Using Open Sans for body and Lato for headings.</p>
+
+        <div class="typography-example">
+          <h1>Heading 1 - Main Page Title</h1>
+          <h2>Heading 2 - Section Title</h2>
+          <h3>Heading 3 - Subsection Title</h3>
+          <h4>Heading 4 - Component Title</h4>
+          <p>Body text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="text-sm">Small text for captions and metadata</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buttons Section -->
+    <section class="showcase-section">
+      <div class="container">
+        <h2>Buttons</h2>
+        <p>Button components will be defined by UI-001 task</p>
+
+        <div class="component-example">
+          <button style="padding: var(--spacing-sm) var(--spacing-lg); background: var(--color-primary); color: white; border: none; border-radius: var(--radius-md); cursor: pointer; font-weight: 600;">
+            Primary Button
+          </button>
+          <button style="padding: var(--spacing-sm) var(--spacing-lg); background: transparent; color: var(--color-primary); border: 2px solid var(--color-primary); border-radius: var(--radius-md); cursor: pointer; font-weight: 600; margin-left: var(--spacing-sm);">
+            Secondary Button
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="showcase-section">
+      <div class="container">
+        <h2>Cards</h2>
+        <p>Card components for service displays and content blocks</p>
+
+        <div class="component-example">
+          <article style="padding: var(--spacing-lg); border: 1px solid var(--color-border); border-radius: var(--radius-md); max-width: 400px;">
+            <h3>Service Card Title</h3>
+            <p>Description of the service or content. This is a placeholder for the actual content that will be added.</p>
+            <a href="#" style="display: inline-block; margin-top: var(--spacing-sm); color: var(--color-secondary); font-weight: 600;">
+              Learn More &rarr;
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spacing Section -->
+    <section class="showcase-section">
+      <div class="container">
+        <h2>Spacing Scale</h2>
+        <p>Consistent spacing tokens for layout and components</p>
+
+        <div style="margin-top: var(--spacing-lg);">
+          <div style="background: var(--color-primary); height: 8px; width: var(--spacing-xs); margin-bottom: var(--spacing-xs);"></div>
+          <p><code>--spacing-xs</code>: 0.5rem (8px)</p>
+
+          <div style="background: var(--color-primary); height: 8px; width: var(--spacing-sm); margin: var(--spacing-sm) 0 var(--spacing-xs);"></div>
+          <p><code>--spacing-sm</code>: 1rem (16px)</p>
+
+          <div style="background: var(--color-primary); height: 8px; width: var(--spacing-md); margin: var(--spacing-sm) 0 var(--spacing-xs);"></div>
+          <p><code>--spacing-md</code>: 1.5rem (24px)</p>
+
+          <div style="background: var(--color-primary); height: 8px; width: var(--spacing-lg); margin: var(--spacing-sm) 0 var(--spacing-xs);"></div>
+          <p><code>--spacing-lg</code>: 2rem (32px)</p>
+
+          <div style="background: var(--color-primary); height: 8px; width: var(--spacing-xl); margin: var(--spacing-sm) 0 var(--spacing-xs);"></div>
+          <p><code>--spacing-xl</code>: 3rem (48px)</p>
+
+          <div style="background: var(--color-primary); height: 8px; width: var(--spacing-2xl); margin: var(--spacing-sm) 0 var(--spacing-xs);"></div>
+          <p><code>--spacing-2xl</code>: 4rem (64px)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Section -->
+    <section class="showcase-section">
+      <div class="container">
+        <h2>Navigation</h2>
+        <p>Navigation components will be fully implemented by UI-001</p>
+
+        <div class="component-example">
+          <nav role="navigation" aria-label="Example navigation">
+            <ul style="list-style: none; display: flex; gap: var(--spacing-md);" role="list">
+              <li><a href="#" style="color: var(--color-primary); font-weight: 600;">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- Forms Section -->
+    <section class="showcase-section">
+      <div class="container">
+        <h2>Form Elements</h2>
+        <p>Form components will be implemented by UI-001</p>
+
+        <div class="component-example">
+          <form style="max-width: 500px;">
+            <div style="margin-bottom: var(--spacing-md);">
+              <label for="name" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 600;">Name</label>
+              <input type="text" id="name" style="width: 100%; padding: var(--spacing-sm); border: 1px solid var(--color-border); border-radius: var(--radius-sm);">
+            </div>
+            <div style="margin-bottom: var(--spacing-md);">
+              <label for="email" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 600;">Email</label>
+              <input type="email" id="email" style="width: 100%; padding: var(--spacing-sm); border: 1px solid var(--color-border); border-radius: var(--radius-sm);">
+            </div>
+            <button type="submit" style="padding: var(--spacing-sm) var(--spacing-lg); background: var(--color-primary); color: white; border: none; border-radius: var(--radius-md); cursor: pointer; font-weight: 600;">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" style="background-color: var(--color-background-alt); padding: var(--spacing-xl) 0; margin-top: var(--spacing-2xl);">
+    <div class="container">
+      <p class="text-center">Component Showcase - Design System Reference</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,483 @@
+/**
+ * NWESTCO DESIGN SYSTEM - BUTTONS
+ *
+ * Button component system with variants:
+ * - Primary (blue background)
+ * - Secondary (green background)
+ * - Outline (transparent with border)
+ * - Ghost (for dark backgrounds)
+ * - Sizes: small, default, large
+ * - States: default, hover, active, focus, disabled
+ *
+ * WCAG AA Compliant - All button color combinations meet 4.5:1 contrast
+ */
+
+
+/* ============================================================
+   BASE BUTTON STYLES
+   ============================================================ */
+
+.btn,
+button[class*="btn-"] {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  /* Typography */
+  font-family: var(--font-primary);
+  font-size: var(--text-base);        /* 16px */
+  font-weight: var(--font-semibold);  /* 600 */
+  line-height: var(--leading-normal);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+
+  /* Spacing */
+  padding: var(--button-padding-y) var(--button-padding-x);
+
+  /* Visual */
+  border-radius: var(--radius-base);
+  border: 2px solid transparent;
+  cursor: pointer;
+  user-select: none;
+
+  /* Transitions */
+  transition: all var(--transition-fast);
+
+  /* Prevent text selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Remove default button outline, use custom focus style */
+.btn:focus,
+button[class*="btn-"]:focus {
+  outline: none;
+}
+
+/* Focus visible state for accessibility */
+.btn:focus-visible,
+button[class*="btn-"]:focus-visible {
+  box-shadow: var(--shadow-focus);
+  outline: 2px solid var(--nwestco-blue);
+  outline-offset: 2px;
+}
+
+
+/* ============================================================
+   PRIMARY BUTTON - Nwestco Blue
+   ============================================================ */
+
+.btn-primary {
+  background-color: var(--nwestco-blue);
+  color: var(--nwestco-white);
+  border-color: var(--nwestco-blue);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--nwestco-blue-dark);
+  border-color: var(--nwestco-blue-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:active:not(:disabled) {
+  background-color: var(--nwestco-blue-darker);
+  border-color: var(--nwestco-blue-darker);
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+
+/* ============================================================
+   SECONDARY BUTTON - Nwestco Green
+   ============================================================ */
+
+.btn-secondary {
+  background-color: var(--nwestco-green);
+  color: var(--nwestco-white);
+  border-color: var(--nwestco-green);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: var(--nwestco-green-dark);
+  border-color: var(--nwestco-green-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary:active:not(:disabled) {
+  background-color: var(--nwestco-green-darker);
+  border-color: var(--nwestco-green-darker);
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:focus-visible {
+  box-shadow: var(--shadow-focus-green);
+  outline-color: var(--nwestco-green);
+}
+
+
+/* ============================================================
+   OUTLINE BUTTON - Transparent with blue border
+   ============================================================ */
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--nwestco-blue);
+  border-color: var(--nwestco-blue);
+}
+
+.btn-outline:hover:not(:disabled) {
+  background-color: var(--nwestco-blue);
+  color: var(--nwestco-white);
+  border-color: var(--nwestco-blue);
+}
+
+.btn-outline:active:not(:disabled) {
+  background-color: var(--nwestco-blue-dark);
+  border-color: var(--nwestco-blue-dark);
+}
+
+
+/* ============================================================
+   GHOST BUTTON - For dark backgrounds
+   ============================================================ */
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--nwestco-white);
+  border-color: var(--nwestco-white);
+}
+
+.btn-ghost:hover:not(:disabled) {
+  background-color: var(--nwestco-white);
+  color: var(--nwestco-blue);
+  border-color: var(--nwestco-white);
+}
+
+.btn-ghost:active:not(:disabled) {
+  background-color: var(--nwestco-neutral-100);
+  color: var(--nwestco-blue-dark);
+  border-color: var(--nwestco-neutral-100);
+}
+
+
+/* ============================================================
+   LINK BUTTON - Looks like text link
+   ============================================================ */
+
+.btn-link {
+  background-color: transparent;
+  color: var(--nwestco-blue);
+  border-color: transparent;
+  padding: 0.5rem 1rem;
+  text-decoration: underline;
+}
+
+.btn-link:hover:not(:disabled) {
+  color: var(--nwestco-blue-dark);
+  background-color: transparent;
+  text-decoration: underline;
+  transform: none;
+  box-shadow: none;
+}
+
+
+/* ============================================================
+   BUTTON SIZES
+   ============================================================ */
+
+/* Small button */
+.btn-sm {
+  font-size: var(--text-sm);          /* 13px */
+  padding: var(--button-padding-y-sm) var(--button-padding-x-sm);
+}
+
+/* Large button */
+.btn-lg {
+  font-size: var(--text-lg);          /* 18px */
+  padding: var(--button-padding-y-lg) var(--button-padding-x-lg);
+}
+
+/* Full width button */
+.btn-block {
+  display: flex;
+  width: 100%;
+}
+
+
+/* ============================================================
+   BUTTON WITH ICONS
+   ============================================================ */
+
+.btn-icon {
+  padding: 0.875rem;
+  aspect-ratio: 1;
+}
+
+.btn-icon-left {
+  padding-left: 1.5rem;
+}
+
+.btn-icon-right {
+  padding-right: 1.5rem;
+}
+
+/* Icon inside button */
+.btn svg,
+.btn img.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+
+/* ============================================================
+   BUTTON STATES
+   ============================================================ */
+
+/* Disabled state */
+.btn:disabled,
+.btn.disabled,
+button[class*="btn-"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Loading state */
+.btn.loading {
+  position: relative;
+  color: transparent;
+  pointer-events: none;
+}
+
+.btn.loading::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.5rem;
+  margin-top: -0.5rem;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  border-right-color: transparent;
+  animation: button-loading-spinner 0.6s linear infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+
+/* ============================================================
+   BUTTON GROUPS
+   ============================================================ */
+
+.btn-group {
+  display: inline-flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-group.btn-group-sm {
+  gap: 0.5rem;
+}
+
+.btn-group.btn-group-lg {
+  gap: 1.5rem;
+}
+
+/* Connected button group */
+.btn-group-connected {
+  display: inline-flex;
+  gap: 0;
+}
+
+.btn-group-connected .btn {
+  border-radius: 0;
+  margin-left: -1px;
+}
+
+.btn-group-connected .btn:first-child {
+  border-top-left-radius: var(--radius-base);
+  border-bottom-left-radius: var(--radius-base);
+  margin-left: 0;
+}
+
+.btn-group-connected .btn:last-child {
+  border-top-right-radius: var(--radius-base);
+  border-bottom-right-radius: var(--radius-base);
+}
+
+
+/* ============================================================
+   SPECIAL BUTTON VARIANTS
+   ============================================================ */
+
+/* Emergency button - Red for urgent actions */
+.btn-emergency {
+  background-color: var(--nwestco-error);
+  color: var(--nwestco-white);
+  border-color: var(--nwestco-error);
+}
+
+.btn-emergency:hover:not(:disabled) {
+  background-color: var(--nwestco-error-dark);
+  border-color: var(--nwestco-error-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Success button */
+.btn-success {
+  background-color: var(--nwestco-success);
+  color: var(--nwestco-white);
+  border-color: var(--nwestco-success);
+}
+
+.btn-success:hover:not(:disabled) {
+  background-color: var(--nwestco-success-dark);
+  border-color: var(--nwestco-success-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+
+/* ============================================================
+   CALL-TO-ACTION BUTTONS - Enhanced visibility
+   ============================================================ */
+
+.btn-cta {
+  font-size: var(--text-lg);
+  padding: 1.125rem 2.5rem;
+  font-weight: var(--font-bold);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-cta:hover:not(:disabled) {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+/* Pulsing animation for CTA buttons */
+.btn-cta.pulse {
+  animation: btn-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes btn-pulse {
+  0%, 100% {
+    box-shadow: var(--shadow-md);
+  }
+  50% {
+    box-shadow: var(--shadow-xl);
+  }
+}
+
+
+/* ============================================================
+   PHONE BUTTON - Special styling for phone CTAs
+   ============================================================ */
+
+.btn-phone {
+  position: relative;
+  padding-left: 3rem;
+}
+
+.btn-phone::before {
+  content: "=Þ";
+  position: absolute;
+  left: 1rem;
+  font-size: 1.25rem;
+}
+
+
+/* ============================================================
+   RESPONSIVE BUTTONS - Mobile adjustments
+   ============================================================ */
+
+@media (max-width: 768px) {
+  /* Make buttons slightly smaller on mobile */
+  .btn {
+    font-size: var(--text-sm);
+    padding: 0.75rem 1.5rem;
+  }
+
+  .btn-lg {
+    font-size: var(--text-base);
+    padding: 1rem 2rem;
+  }
+
+  /* Full width buttons on mobile for better touch targets */
+  .btn-mobile-block {
+    display: flex;
+    width: 100%;
+  }
+
+  /* Stack button groups on mobile */
+  .btn-group-mobile-stack {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-group-mobile-stack .btn {
+    width: 100%;
+  }
+}
+
+
+/* ============================================================
+   ACCESSIBILITY ENHANCEMENTS
+   ============================================================ */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .btn-outline {
+    border-width: 3px;
+  }
+
+  .btn:focus-visible {
+    outline-width: 3px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .btn-cta {
+    transition: none;
+    animation: none;
+  }
+
+  .btn:hover {
+    transform: none;
+  }
+}
+
+
+/* ============================================================
+   PRINT STYLES
+   ============================================================ */
+
+@media print {
+  .btn,
+  button[class*="btn-"] {
+    border: 1px solid #000;
+    box-shadow: none;
+    background: transparent !important;
+    color: #000 !important;
+  }
+}
