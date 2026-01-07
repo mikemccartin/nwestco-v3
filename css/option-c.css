@@ -16,8 +16,11 @@
   color: var(--nwestco-white);
   padding: 0.75rem 0;
   text-align: center;
-  position: relative;
-  z-index: 1001;
+  position: fixed;
+  top: 107px; /* Below the fixed header (logo 75px + padding 32px) */
+  left: 0;
+  right: 0;
+  z-index: 999; /* Below header (1000) but above content */
 }
 
 .announcement-banner .container {
@@ -319,7 +322,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding-top: 80px; /* Account for fixed header */
+  padding-top: 150px; /* Account for fixed header (107px) + announcement banner (~43px) */
 }
 
 .hero-background {
