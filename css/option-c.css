@@ -369,6 +369,8 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .fullscreen-menu:not([aria-hidden="true"]) {
@@ -1909,6 +1911,16 @@
   .menu-sections {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .fullscreen-menu {
+    align-items: flex-start;
+    padding-top: 5rem;
+  }
+
+  .fullscreen-menu-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .hero-title {
