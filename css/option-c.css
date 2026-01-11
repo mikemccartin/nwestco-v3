@@ -1073,6 +1073,11 @@
   color: var(--nwestco-white);
 }
 
+/* But keep text-accent green inside h3 headers */
+.timeline-detail h3 .text-accent {
+  color: var(--nwestco-green-light);
+}
+
 .timeline-detail .detail-stat .text-accent {
   color: var(--nwestco-white);
 }
