@@ -2236,6 +2236,13 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
+.news-card-image img {
+  max-width: 120px;
+  height: auto;
+  opacity: 0.3;
+  filter: brightness(0) invert(1);
+}
+
 .news-card-content {
   padding: 1.5rem;
 }
