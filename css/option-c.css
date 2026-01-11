@@ -705,12 +705,6 @@
   color: var(--nwestco-green-light);
 }
 
-/* Override green accents on flip card fronts - keep all text white except headers */
-.flip-card-front .text-accent {
-  color: var(--nwestco-white);
-  font-weight: inherit;
-}
-
 .flip-card-front .stat-large,
 .flip-card-front .stat-large strong,
 .flip-card-front p {
@@ -1068,20 +1062,6 @@
   font-weight: var(--font-bold);
 }
 
-/* Override green accents in timeline-detail body text - keep all white */
-.timeline-detail .text-accent {
-  color: var(--nwestco-white);
-}
-
-/* But keep text-accent green inside h3 headers */
-.timeline-detail h3 .text-accent {
-  color: var(--nwestco-green-light);
-}
-
-.timeline-detail .detail-stat .text-accent {
-  color: var(--nwestco-white);
-}
-
 .timeline-detail ul {
   list-style: none;
   padding: 0;
@@ -1262,12 +1242,6 @@
   line-height: var(--leading-relaxed);
 }
 
-/* Remove green accents from testimonial quotes - keep all text same color and weight */
-.testimonial-slide blockquote .text-accent {
-  color: inherit;
-  font-weight: inherit;
-}
-
 .testimonial-slide footer {
   color: var(--nwestco-neutral-500);
 }
@@ -1391,17 +1365,6 @@
   margin-bottom: 1rem;
   opacity: 0.9;
   color: var(--nwestco-white);
-}
-
-/* Override green accents in project cards - keep body text white */
-.project-overlay .text-accent {
-  color: var(--nwestco-white);
-  font-weight: inherit;
-}
-
-/* But keep text-accent green inside h3 headers */
-.project-overlay h3 .text-accent {
-  color: var(--nwestco-green-light);
 }
 
 .section-cta {
@@ -2414,21 +2377,7 @@
    ============================================================ */
 
 /* Bold green accent for emphasized words - accessible at 14px+ bold */
-.text-accent {
-  color: var(--nwestco-green-light);
-  font-weight: 700;
-}
-
-/* For dark backgrounds - bright green stands out */
-.hero-section .text-accent {
-  color: #9FBE6E;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-}
-
-.cta-panel .text-accent {
-  color: #C5E09B;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
-}
+/* .text-accent rule removed - no longer styling these spans */
 
 /* Stat numbers get the accent treatment */
 .stat-number {
