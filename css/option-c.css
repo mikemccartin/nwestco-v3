@@ -1262,6 +1262,11 @@
   line-height: var(--leading-relaxed);
 }
 
+/* Remove green accents from testimonial quotes - keep all text same color */
+.testimonial-slide blockquote .text-accent {
+  color: inherit;
+}
+
 .testimonial-slide footer {
   color: var(--nwestco-neutral-500);
 }
