@@ -1,0 +1,121 @@
+<!-- Benefits Section Icons - Line Style -->
+<!-- All icons: 24x24 viewBox, stroke-based, optimized for small sizes -->
+
+<!-- 1. FUEL GAUGE - Gas Allowance -->
+<!-- Car fuel gauge with needle pointing to full (right side) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Gauge arc (semicircle) -->
+  <path d="M4 18a10 10 0 0 1 16 0"/>
+  <!-- Gauge base line -->
+  <line x1="3" y1="18" x2="21" y2="18"/>
+  <!-- E marker (empty - left) -->
+  <line x1="6" y1="15" x2="6" y2="13"/>
+  <!-- F marker (full - right) -->
+  <line x1="18" y1="15" x2="18" y2="13"/>
+  <!-- Center tick -->
+  <line x1="12" y1="10" x2="12" y2="8"/>
+  <!-- Needle pointing to full (right) -->
+  <line x1="12" y1="18" x2="17" y2="12"/>
+  <!-- Needle center dot -->
+  <circle cx="12" cy="18" r="1.5"/>
+</svg>
+
+
+<!-- 2. GROWTH BAR CHART - 401K with Company Match -->
+<!-- Ascending bars showing growth -->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Bar 1 (shortest) -->
+  <line x1="4" y1="20" x2="4" y2="16"/>
+  <!-- Bar 2 -->
+  <line x1="9" y1="20" x2="9" y2="12"/>
+  <!-- Bar 3 -->
+  <line x1="14" y1="20" x2="14" y2="8"/>
+  <!-- Bar 4 (tallest) -->
+  <line x1="19" y1="20" x2="19" y2="4"/>
+  <!-- Growth arrow -->
+  <polyline points="15 5 19 4 20 8"/>
+</svg>
+
+
+<!-- 3. WARNING SIGN - Short Term Disability -->
+<!-- Diamond shape warning sign with exclamation -->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Diamond shape -->
+  <path d="M12 2L22 12L12 22L2 12Z"/>
+  <!-- Exclamation line -->
+  <line x1="12" y1="8" x2="12" y2="13"/>
+  <!-- Exclamation dot -->
+  <circle cx="12" cy="16" r="0.5" fill="currentColor"/>
+</svg>
+
+
+<!-- 4. LIBERTY BELL - Life Insurance -->
+<!-- Liberty bell with characteristic crack and yoke -->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Bell yoke (top mount) -->
+  <path d="M8 3h8"/>
+  <line x1="12" y1="3" x2="12" y2="5"/>
+  <!-- Bell body - liberty bell shape (wider at bottom, curved) -->
+  <path d="M7 5c-1 0-2 2-2 6s1 7 2 8h10c1-1 2-4 2-8s-1-6-2-6"/>
+  <!-- Bell lip (wider bottom) -->
+  <path d="M5 19h14"/>
+  <!-- Clapper -->
+  <line x1="12" y1="15" x2="12" y2="19"/>
+  <circle cx="12" cy="20" r="1"/>
+  <!-- Liberty bell crack -->
+  <path d="M10 8l2 4l-1 3"/>
+</svg>
+
+
+<!-- 5. UMBRELLA - Cancer/Accident/Hospital Insurance -->
+<!-- Simple umbrella with handle and arch top -->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Umbrella canopy (simple arch) -->
+  <path d="M4 12a8 8 0 0 1 16 0"/>
+  <!-- Umbrella edge scallops -->
+  <path d="M4 12c0-1 1-2 2.5-2s2.5 2 2.5 2"/>
+  <path d="M9 12c0-1 1-2 3-2s3 2 3 2"/>
+  <path d="M15 12c0-1 1-2 2.5-2s2.5 2 2.5 2"/>
+  <!-- Handle (pole) -->
+  <line x1="12" y1="12" x2="12" y2="19"/>
+  <!-- Handle curve (J-hook) -->
+  <path d="M12 19a2 2 0 0 1-2 2 2 2 0 0 1-2-2"/>
+</svg>
+
+
+<!-- 6. AIRPLANE - Paid Vacation, Sick Leave, and Holidays -->
+<!-- Simple airplane with wings -->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Fuselage -->
+  <path d="M3 12h4l2-3h6l-1 3h7a1 1 0 0 1 0 2h-7l1 3H9l-2-3H3"/>
+  <!-- Wings -->
+  <path d="M9 9l3-5"/>
+  <path d="M9 15l3 5"/>
+  <!-- Tail -->
+  <path d="M5 10l-2-3"/>
+  <path d="M5 14l-2 3"/>
+</svg>
+
+
+<!-- 7. T-SHIRT - Free Company Apparel -->
+<!-- T-shirt with sleeve openings -->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- T-shirt outline with sleeves -->
+  <path d="M8 3h8l1 1 4 3-2 3-3-2v12H8V8L5 10 3 7l4-3 1-1z"/>
+  <!-- Collar/neckline -->
+  <path d="M9 3a3 3 0 0 0 6 0"/>
+</svg>
+
+
+<!-- 8. HARD HAT - Free Safety Gear (PPE) -->
+<!-- Construction hard hat -->
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Hard hat dome -->
+  <path d="M4 14a8 8 0 0 1 16 0"/>
+  <!-- Brim -->
+  <path d="M2 14h20"/>
+  <!-- Inner suspension band -->
+  <path d="M6 14v2a6 6 0 0 0 12 0v-2"/>
+  <!-- Top ridge/vent -->
+  <line x1="12" y1="6" x2="12" y2="10"/>
+</svg>

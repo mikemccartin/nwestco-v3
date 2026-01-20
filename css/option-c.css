@@ -101,7 +101,7 @@
    ============================================================ */
 
 .site-header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -488,7 +488,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding-top: 150px; /* Account for fixed header (107px) + announcement banner (~43px) */
+  padding-top: 50px; /* Reduced - sticky header is now part of document flow */
 }
 
 .hero-background {

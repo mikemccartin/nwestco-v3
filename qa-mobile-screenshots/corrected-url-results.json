@@ -1,0 +1,154 @@
+{
+  "menuResults": {
+    "hamburgerVisible": true,
+    "menuOpens": false,
+    "menuCloses": true,
+    "linksClickable": false
+  },
+  "pageResults": [
+    {
+      "name": "homepage",
+      "url": "https://nwestco-v1-5.tandemtheory.com/",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "about",
+      "url": "https://nwestco-v1-5.tandemtheory.com/about.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "careers",
+      "url": "https://nwestco-v1-5.tandemtheory.com/careers.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "contact",
+      "url": "https://nwestco-v1-5.tandemtheory.com/contact.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "financing",
+      "url": "https://nwestco-v1-5.tandemtheory.com/financing.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "locations",
+      "url": "https://nwestco-v1-5.tandemtheory.com/locations.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "projects",
+      "url": "https://nwestco-v1-5.tandemtheory.com/projects.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "news",
+      "url": "https://nwestco-v1-5.tandemtheory.com/news.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "market-fuel-systems",
+      "url": "https://nwestco-v1-5.tandemtheory.com/markets/fuel-systems.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "market-car-wash",
+      "url": "https://nwestco-v1-5.tandemtheory.com/markets/car-wash.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "market-environmental",
+      "url": "https://nwestco-v1-5.tandemtheory.com/markets/environmental.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "service-design-engineering",
+      "url": "https://nwestco-v1-5.tandemtheory.com/services/design-engineering.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "service-installation",
+      "url": "https://nwestco-v1-5.tandemtheory.com/services/installation.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "service-maintenance",
+      "url": "https://nwestco-v1-5.tandemtheory.com/services/service-maintenance.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "service-remodels",
+      "url": "https://nwestco-v1-5.tandemtheory.com/services/remodels-upgrades.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "service-equipment",
+      "url": "https://nwestco-v1-5.tandemtheory.com/services/equipment-parts.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "service-testing",
+      "url": "https://nwestco-v1-5.tandemtheory.com/services/testing-compliance.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "service-training",
+      "url": "https://nwestco-v1-5.tandemtheory.com/services/training.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "legal-privacy",
+      "url": "https://nwestco-v1-5.tandemtheory.com/legal/privacy.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "legal-terms",
+      "url": "https://nwestco-v1-5.tandemtheory.com/legal/terms.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "legal-accessibility",
+      "url": "https://nwestco-v1-5.tandemtheory.com/legal/accessibility.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "news-arkoma",
+      "url": "https://nwestco-v1-5.tandemtheory.com/news/arkoma-acquisition.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "news-able-cleanup",
+      "url": "https://nwestco-v1-5.tandemtheory.com/news/able-cleanup-acquisition.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    },
+    {
+      "name": "news-palmetto",
+      "url": "https://nwestco-v1-5.tandemtheory.com/news/palmetto-acquisition.html",
+      "status": 200,
+      "hasHorizontalScroll": false
+    }
+  ]
+}

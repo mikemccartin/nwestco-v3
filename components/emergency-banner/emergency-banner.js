@@ -164,45 +164,18 @@
 
     /**
      * Adjust header position when banner is visible
-     * Since header is position:fixed at top:0, we need to push it down
+     * With sticky header, no adjustment needed - banner scrolls naturally
      */
     adjustHeaderPosition: function() {
-      var banner = document.getElementById(CONFIG.bannerId);
-      var header = document.querySelector('.site-header');
-
-      if (banner && header) {
-        var bannerHeight = banner.offsetHeight;
-        header.style.top = bannerHeight + 'px';
-
-        // Also adjust the announcement banner if it exists
-        var announcementBanner = document.getElementById('announcement-banner');
-        if (announcementBanner) {
-          // Get current top value (should be 107px from CSS)
-          var currentTop = parseInt(window.getComputedStyle(announcementBanner).top) || 107;
-          announcementBanner.style.top = (currentTop + bannerHeight) + 'px';
-        }
-
-        // Adjust skip-nav focus position
-        var skipNav = document.querySelector('.skip-nav');
-        if (skipNav) {
-          skipNav.style.setProperty('--banner-offset', bannerHeight + 'px');
-        }
-      }
+      // No adjustment needed - header is position:sticky
+      // Banner scrolls away naturally and header sticks at top:0
     },
 
     /**
      * Reset header position when banner is dismissed
      */
     resetHeaderPosition: function() {
-      var header = document.querySelector('.site-header');
-      if (header) {
-        header.style.top = '';
-      }
-
-      var announcementBanner = document.getElementById('announcement-banner');
-      if (announcementBanner) {
-        announcementBanner.style.top = '';
-      }
+      // No adjustment needed with sticky header
     },
 
     /**
@@ -235,18 +208,7 @@
     NwEmergencyBanner.init();
   });
 
-  /**
-   * Also handle window resize (recalculate header offset)
-   */
-  var resizeTimeout;
-  window.addEventListener('resize', function() {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(function() {
-      if (!NwEmergencyBanner.isDismissed()) {
-        NwEmergencyBanner.adjustHeaderPosition();
-      }
-    }, 100);
-  });
+  // No resize handler needed - sticky header handles positioning automatically
 
   /**
    * Expose to global scope for inline onclick handlers

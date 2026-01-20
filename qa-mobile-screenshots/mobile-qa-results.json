@@ -1,0 +1,2394 @@
+{
+  "timestamp": "2026-01-11T17:05:24.626Z",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "baseUrl": "https://nwestco-v1-5.tandemtheory.com",
+  "pages": [
+    {
+      "name": "homepage",
+      "url": "https://nwestco-v1-5.tandemtheory.com/",
+      "tests": {
+        "pageLoads": true,
+        "noHorizontalScroll": true,
+        "hamburgerExists": true,
+        "menuOpens": "error",
+        "textReadable": false,
+        "tappableButtons": true,
+        "heroSection": {
+          "exists": true,
+          "height": 812,
+          "width": 375,
+          "viewportHeight": 812
+        },
+        "imagesProperlyScaled": true,
+        "cardsStackProperly": false,
+        "formsUsable": true,
+        "footerNavigable": true,
+        "touchFriendlySpacing": true
+      },
+      "issues": [
+        {
+          "type": "MEDIUM",
+          "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Found 10+ elements with font-size < 14px",
+          "details": [
+            {
+              "tag": "SPAN",
+              "fontSize": 12.8,
+              "text": "NEWS: Nwestco is excited to announce the acquisiti"
+            },
+            {
+              "tag": "A",
+              "fontSize": 12.8,
+              "text": "Read more →"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Design & Engineering"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Installation & Construction"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "24/7 Service & Maintenance"
+            },
+            {
+              "tag": "SPAN",
+              "fontSize": 12.8,
+              "text": "24/7"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Testing & Compliance"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Equipment Sales & Service"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Chemistry Programs"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Preventative Maintenance"
+            }
+          ]
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Some grid items may not be stacking properly on mobile",
+          "details": [
+            {
+              "gridIndex": 20,
+              "childrenCount": 4,
+              "firstChildWidth": 148
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "about",
+      "url": "https://nwestco-v1-5.tandemtheory.com/about.html",
+      "tests": {
+        "pageLoads": true,
+        "noHorizontalScroll": true,
+        "hamburgerExists": true,
+        "menuOpens": "error",
+        "textReadable": true,
+        "tappableButtons": true,
+        "heroSection": {
+          "exists": true,
+          "height": 812,
+          "width": 375,
+          "viewportHeight": 812
+        },
+        "imagesProperlyScaled": true,
+        "cardsStackProperly": false,
+        "formsUsable": true,
+        "footerNavigable": true,
+        "touchFriendlySpacing": true
+      },
+      "issues": [
+        {
+          "type": "MEDIUM",
+          "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Some grid items may not be stacking properly on mobile",
+          "details": [
+            {
+              "gridIndex": 0,
+              "childrenCount": 4,
+              "firstChildWidth": 148
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "careers",
+      "url": "https://nwestco-v1-5.tandemtheory.com/careers.html",
+      "tests": {
+        "pageLoads": true,
+        "noHorizontalScroll": true,
+        "hamburgerExists": true,
+        "menuOpens": "error",
+        "textReadable": true,
+        "tappableButtons": false,
+        "heroSection": {
+          "exists": true,
+          "height": 812,
+          "width": 375,
+          "viewportHeight": 812
+        },
+        "imagesProperlyScaled": true,
+        "cardsStackProperly": false,
+        "formsUsable": true,
+        "footerNavigable": false,
+        "touchFriendlySpacing": true
+      },
+      "issues": [
+        {
+          "type": "MEDIUM",
+          "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Found 2+ buttons smaller than 44x44px tap target",
+          "details": [
+            {
+              "text": "Show Results",
+              "width": 124,
+              "height": 42
+            },
+            {
+              "text": "Reset Filters",
+              "width": 96,
+              "height": 42
+            }
+          ]
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Some grid items may not be stacking properly on mobile",
+          "details": [
+            {
+              "gridIndex": 0,
+              "childrenCount": 4,
+              "firstChildWidth": 148
+            }
+          ]
+        },
+        {
+          "type": "LOW",
+          "description": "Some footer links may be hard to tap on mobile",
+          "details": [
+            {
+              "text": "Fuel Systems",
+              "height": 19
+            },
+            {
+              "text": "Car Wash Systems",
+              "height": 19
+            },
+            {
+              "text": "Design & Engineering",
+              "height": 19
+            },
+            {
+              "text": "Remodels & Upgrades",
+              "height": 19
+            },
+            {
+              "text": "Testing & Compliance",
+              "height": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "contact",
+      "url": "https://nwestco-v1-5.tandemtheory.com/contact.html",
+      "tests": {
+        "pageLoads": true,
+        "noHorizontalScroll": true,
+        "hamburgerExists": true,
+        "menuOpens": "error",
+        "textReadable": true,
+        "tappableButtons": true,
+        "heroSection": {
+          "exists": true,
+          "height": 487,
+          "width": 375,
+          "viewportHeight": 812
+        },
+        "imagesProperlyScaled": true,
+        "cardsStackProperly": false,
+        "formsUsable": true,
+        "footerNavigable": false,
+        "touchFriendlySpacing": true
+      },
+      "issues": [
+        {
+          "type": "MEDIUM",
+          "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Some grid items may not be stacking properly on mobile",
+          "details": [
+            {
+              "gridIndex": 1,
+              "childrenCount": 4,
+              "firstChildWidth": 148
+            }
+          ]
+        },
+        {
+          "type": "LOW",
+          "description": "Some footer links may be hard to tap on mobile",
+          "details": [
+            {
+              "text": "Fuel Systems",
+              "height": 19
+            },
+            {
+              "text": "Car Wash Systems",
+              "height": 19
+            },
+            {
+              "text": "Design & Engineering",
+              "height": 19
+            },
+            {
+              "text": "Remodels & Upgrades",
+              "height": 19
+            },
+            {
+              "text": "Testing & Compliance",
+              "height": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "financing",
+      "url": "https://nwestco-v1-5.tandemtheory.com/financing.html",
+      "tests": {
+        "pageLoads": true,
+        "noHorizontalScroll": true,
+        "hamburgerExists": true,
+        "menuOpens": "error",
+        "textReadable": true,
+        "tappableButtons": true,
+        "heroSection": {
+          "exists": true,
+          "height": 812,
+          "width": 375,
+          "viewportHeight": 812
+        },
+        "imagesProperlyScaled": true,
+        "cardsStackProperly": false,
+        "formsUsable": true,
+        "footerNavigable": false,
+        "touchFriendlySpacing": true
+      },
+      "issues": [
+        {
+          "type": "MEDIUM",
+          "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Some grid items may not be stacking properly on mobile",
+          "details": [
+            {
+              "gridIndex": 0,
+              "childrenCount": 3,
+              "firstChildWidth": 148
+            }
+          ]
+        },
+        {
+          "type": "LOW",
+          "description": "Some footer links may be hard to tap on mobile",
+          "details": [
+            {
+              "text": "Fuel Systems",
+              "height": 19
+            },
+            {
+              "text": "Car Wash Systems",
+              "height": 19
+            },
+            {
+              "text": "Design & Engineering",
+              "height": 19
+            },
+            {
+              "text": "Remodels & Upgrades",
+              "height": 19
+            },
+            {
+              "text": "Testing & Compliance",
+              "height": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "locations",
+      "url": "https://nwestco-v1-5.tandemtheory.com/locations.html",
+      "tests": {
+        "pageLoads": true,
+        "noHorizontalScroll": true,
+        "hamburgerExists": true,
+        "menuOpens": "error",
+        "textReadable": false,
+        "tappableButtons": true,
+        "heroSection": {
+          "exists": true,
+          "height": 440,
+          "width": 375,
+          "viewportHeight": 812
+        },
+        "imagesProperlyScaled": true,
+        "cardsStackProperly": false,
+        "formsUsable": true,
+        "footerNavigable": false,
+        "touchFriendlySpacing": true
+      },
+      "issues": [
+        {
+          "type": "MEDIUM",
+          "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Found 10+ elements with font-size < 14px",
+          "details": [
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Toll Free: 800-339-9930"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Local: 661-631-3870"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Toll Free: 866-316-1099"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Local: 406-896-1099"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Fax: 406-896-8101"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Toll Free: 800-473-3558"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Local: 208-344-6483"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Fax: 208-344-6495"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Local: 303-825-8117"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Local: 925-551-7555"
+            }
+          ]
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Some grid items may not be stacking properly on mobile",
+          "details": [
+            {
+              "gridIndex": 37,
+              "childrenCount": 4,
+              "firstChildWidth": 148
+            }
+          ]
+        },
+        {
+          "type": "LOW",
+          "description": "Some footer links may be hard to tap on mobile",
+          "details": [
+            {
+              "text": "Fuel Systems",
+              "height": 19
+            },
+            {
+              "text": "Car Wash Systems",
+              "height": 19
+            },
+            {
+              "text": "Design & Engineering",
+              "height": 19
+            },
+            {
+              "text": "Remodels & Upgrades",
+              "height": 19
+            },
+            {
+              "text": "Testing & Compliance",
+              "height": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "projects",
+      "url": "https://nwestco-v1-5.tandemtheory.com/projects.html",
+      "tests": {
+        "pageLoads": true,
+        "noHorizontalScroll": true,
+        "hamburgerExists": true,
+        "menuOpens": "error",
+        "textReadable": true,
+        "tappableButtons": true,
+        "heroSection": {
+          "exists": true,
+          "height": 440,
+          "width": 375,
+          "viewportHeight": 812
+        },
+        "imagesProperlyScaled": true,
+        "cardsStackProperly": false,
+        "formsUsable": true,
+        "footerNavigable": false,
+        "touchFriendlySpacing": true
+      },
+      "issues": [
+        {
+          "type": "MEDIUM",
+          "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Some grid items may not be stacking properly on mobile",
+          "details": [
+            {
+              "gridIndex": 1,
+              "childrenCount": 4,
+              "firstChildWidth": 148
+            }
+          ]
+        },
+        {
+          "type": "LOW",
+          "description": "Some footer links may be hard to tap on mobile",
+          "details": [
+            {
+              "text": "Fuel Systems",
+              "height": 19
+            },
+            {
+              "text": "Car Wash Systems",
+              "height": 19
+            },
+            {
+              "text": "Design & Engineering",
+              "height": 19
+            },
+            {
+              "text": "Remodels & Upgrades",
+              "height": 19
+            },
+            {
+              "text": "Testing & Compliance",
+              "height": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "news",
+      "url": "https://nwestco-v1-5.tandemtheory.com/news.html",
+      "tests": {
+        "pageLoads": true,
+        "noHorizontalScroll": true,
+        "hamburgerExists": true,
+        "menuOpens": "error",
+        "textReadable": true,
+        "tappableButtons": true,
+        "heroSection": {
+          "exists": true,
+          "height": 440,
+          "width": 375,
+          "viewportHeight": 812
+        },
+        "imagesProperlyScaled": true,
+        "cardsStackProperly": true,
+        "formsUsable": true,
+        "footerNavigable": false,
+        "touchFriendlySpacing": true
+      },
+      "issues": [
+        {
+          "type": "MEDIUM",
+          "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "type": "LOW",
+          "description": "Some footer links may be hard to tap on mobile",
+          "details": [
+            {
+              "text": "Fuel Systems",
+              "height": 19
+            },
+            {
+              "text": "Car Wash Systems",
+              "height": 19
+            },
+            {
+              "text": "Design & Engineering",
+              "height": 19
+            },
+            {
+              "text": "Remodels & Upgrades",
+              "height": 19
+            },
+            {
+              "text": "Testing & Compliance",
+              "height": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "market-fuel-systems",
+      "url": "https://nwestco-v1-5.tandemtheory.com/markets/fuel-systems.html",
+      "tests": {
+        "pageLoads": true,
+        "noHorizontalScroll": true,
+        "hamburgerExists": true,
+        "menuOpens": "error",
+        "textReadable": false,
+        "tappableButtons": true,
+        "heroSection": {
+          "exists": true,
+          "height": 812,
+          "width": 375,
+          "viewportHeight": 812
+        },
+        "imagesProperlyScaled": true,
+        "cardsStackProperly": false,
+        "formsUsable": true,
+        "footerNavigable": false,
+        "touchFriendlySpacing": true
+      },
+      "issues": [
+        {
+          "type": "MEDIUM",
+          "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Found 10+ elements with font-size < 14px",
+          "details": [
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Multi-product dispensing"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "EMV payment integration"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "POS connectivity"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "High-volume optimization"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Fleet management systems"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Access control"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Automated fuel tracking"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Bulk storage solutions"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Marine dispensing equipment"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Spill containment"
+            }
+          ]
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Some grid items may not be stacking properly on mobile",
+          "details": [
+            {
+              "gridIndex": 22,
+              "childrenCount": 4,
+              "firstChildWidth": 148
+            },
+            {
+              "gridIndex": 23,
+              "childrenCount": 8,
+              "firstChildWidth": 160
+            }
+          ]
+        },
+        {
+          "type": "LOW",
+          "description": "Some footer links may be hard to tap on mobile",
+          "details": [
+            {
+              "text": "Fuel Systems",
+              "height": 19
+            },
+            {
+              "text": "Car Wash Systems",
+              "height": 19
+            },
+            {
+              "text": "Design & Engineering",
+              "height": 19
+            },
+            {
+              "text": "Remodels & Upgrades",
+              "height": 19
+            },
+            {
+              "text": "Testing & Compliance",
+              "height": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "market-car-wash",
+      "url": "https://nwestco-v1-5.tandemtheory.com/markets/car-wash.html",
+      "tests": {
+        "pageLoads": true,
+        "noHorizontalScroll": true,
+        "hamburgerExists": true,
+        "menuOpens": "error",
+        "textReadable": false,
+        "tappableButtons": true,
+        "heroSection": {
+          "exists": true,
+          "height": 812,
+          "width": 375,
+          "viewportHeight": 812
+        },
+        "imagesProperlyScaled": true,
+        "cardsStackProperly": false,
+        "formsUsable": true,
+        "footerNavigable": false,
+        "touchFriendlySpacing": true
+      },
+      "issues": [
+        {
+          "type": "MEDIUM",
+          "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Found 10+ elements with font-size < 14px",
+          "details": [
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Express exterior tunnels"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Full-service tunnels"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Flex-serve hybrid systems"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "150+ cars/hour capacity"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Touchless friction-free"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Soft-touch systems"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Hybrid touch/touchless"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Space-efficient design"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "High-pressure systems"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Foam brush stations"
+            }
+          ]
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Some grid items may not be stacking properly on mobile",
+          "details": [
+            {
+              "gridIndex": 22,
+              "childrenCount": 4,
+              "firstChildWidth": 148
+            },
+            {
+              "gridIndex": 23,
+              "childrenCount": 8,
+              "firstChildWidth": 160
+            }
+          ]
+        },
+        {
+          "type": "LOW",
+          "description": "Some footer links may be hard to tap on mobile",
+          "details": [
+            {
+              "text": "Fuel Systems",
+              "height": 19
+            },
+            {
+              "text": "Car Wash Systems",
+              "height": 19
+            },
+            {
+              "text": "Design & Engineering",
+              "height": 19
+            },
+            {
+              "text": "Remodels & Upgrades",
+              "height": 19
+            },
+            {
+              "text": "Testing & Compliance",
+              "height": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "market-environmental",
+      "url": "https://nwestco-v1-5.tandemtheory.com/markets/environmental.html",
+      "tests": {
+        "pageLoads": true,
+        "noHorizontalScroll": true,
+        "hamburgerExists": true,
+        "menuOpens": "error",
+        "textReadable": false,
+        "tappableButtons": true,
+        "heroSection": {
+          "exists": true,
+          "height": 812,
+          "width": 375,
+          "viewportHeight": 812
+        },
+        "imagesProperlyScaled": true,
+        "cardsStackProperly": false,
+        "formsUsable": true,
+        "footerNavigable": false,
+        "touchFriendlySpacing": true
+      },
+      "issues": [
+        {
+          "type": "MEDIUM",
+          "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Found 10+ elements with font-size < 14px",
+          "details": [
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Precision tank testing"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Line leak detection"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Spill bucket testing"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Overfill protection"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "ATG system installation"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Interstitial monitoring"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Groundwater monitoring"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Vapor monitoring"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Compliance documentation"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Regulatory reporting"
+            }
+          ]
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Some grid items may not be stacking properly on mobile",
+          "details": [
+            {
+              "gridIndex": 22,
+              "childrenCount": 4,
+              "firstChildWidth": 148
+            },
+            {
+              "gridIndex": 23,
+              "childrenCount": 8,
+              "firstChildWidth": 160
+            }
+          ]
+        },
+        {
+          "type": "LOW",
+          "description": "Some footer links may be hard to tap on mobile",
+          "details": [
+            {
+              "text": "Fuel Systems",
+              "height": 19
+            },
+            {
+              "text": "Car Wash Systems",
+              "height": 19
+            },
+            {
+              "text": "Design & Engineering",
+              "height": 19
+            },
+            {
+              "text": "Remodels & Upgrades",
+              "height": 19
+            },
+            {
+              "text": "Testing & Compliance",
+              "height": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "service-construction",
+      "url": "https://nwestco-v1-5.tandemtheory.com/services/construction.html",
+      "tests": {
+        "pageLoads": false
+      },
+      "issues": [
+        {
+          "type": "CRITICAL",
+          "description": "Page failed to load: HTTP 404"
+        }
+      ]
+    },
+    {
+      "name": "service-compliance",
+      "url": "https://nwestco-v1-5.tandemtheory.com/services/compliance.html",
+      "tests": {
+        "pageLoads": false
+      },
+      "issues": [
+        {
+          "type": "CRITICAL",
+          "description": "Page failed to load: HTTP 404"
+        }
+      ]
+    },
+    {
+      "name": "service-service-maintenance",
+      "url": "https://nwestco-v1-5.tandemtheory.com/services/service-maintenance.html",
+      "tests": {
+        "pageLoads": true,
+        "noHorizontalScroll": true,
+        "hamburgerExists": true,
+        "menuOpens": "error",
+        "textReadable": false,
+        "tappableButtons": true,
+        "heroSection": {
+          "exists": true,
+          "height": 812,
+          "width": 375,
+          "viewportHeight": 812
+        },
+        "imagesProperlyScaled": true,
+        "cardsStackProperly": false,
+        "formsUsable": true,
+        "footerNavigable": false,
+        "touchFriendlySpacing": true
+      },
+      "issues": [
+        {
+          "type": "MEDIUM",
+          "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Found 10+ elements with font-size < 14px",
+          "details": [
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "4-hour average response"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Nights and weekends"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Holidays included"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "No overtime surprises"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Custom PM schedules"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Manufacturer specs"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Complete documentation"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Trend analysis"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "Dispensers and pumps"
+            },
+            {
+              "tag": "LI",
+              "fontSize": 12.8,
+              "text": "ATG and monitoring"
+            }
+          ]
+        },
+        {
+          "type": "MEDIUM",
+          "description": "Some grid items may not be stacking properly on mobile",
+          "details": [
+            {
+              "gridIndex": 20,
+              "childrenCount": 4,
+              "firstChildWidth": 148
+            }
+          ]
+        },
+        {
+          "type": "LOW",
+          "description": "Some footer links may be hard to tap on mobile",
+          "details": [
+            {
+              "text": "Fuel Systems",
+              "height": 19
+            },
+            {
+              "text": "Car Wash Systems",
+              "height": 19
+            },
+            {
+              "text": "Design & Engineering",
+              "height": 19
+            },
+            {
+              "text": "Remodels & Upgrades",
+              "height": 19
+            },
+            {
+              "text": "Testing & Compliance",
+              "height": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "service-emergency",
+      "url": "https://nwestco-v1-5.tandemtheory.com/services/emergency.html",
+      "tests": {
+        "pageLoads": false
+      },
+      "issues": [
+        {
+          "type": "CRITICAL",
+          "description": "Page failed to load: HTTP 404"
+        }
+      ]
+    },
+    {
+      "name": "service-equipment-sales",
+      "url": "https://nwestco-v1-5.tandemtheory.com/services/equipment-sales.html",
+      "tests": {
+        "pageLoads": false
+      },
+      "issues": [
+        {
+          "type": "CRITICAL",
+          "description": "Page failed to load: HTTP 404"
+        }
+      ]
+    },
+    {
+      "name": "service-testing",
+      "url": "https://nwestco-v1-5.tandemtheory.com/services/testing.html",
+      "tests": {
+        "pageLoads": false
+      },
+      "issues": [
+        {
+          "type": "CRITICAL",
+          "description": "Page failed to load: HTTP 404"
+        }
+      ]
+    },
+    {
+      "name": "service-fleet-fueling",
+      "url": "https://nwestco-v1-5.tandemtheory.com/services/fleet-fueling.html",
+      "tests": {
+        "pageLoads": false
+      },
+      "issues": [
+        {
+          "type": "CRITICAL",
+          "description": "Page failed to load: HTTP 404"
+        }
+      ]
+    },
+    {
+      "name": "legal-privacy",
+      "url": "https://nwestco-v1-5.tandemtheory.com/legal/privacy.html",
+      "tests": {
+        "pageLoads": true,
+        "noHorizontalScroll": true,
+        "hamburgerExists": true,
+        "menuOpens": "error",
+        "textReadable": true,
+        "tappableButtons": true,
+        "heroSection": {
+          "exists": true,
+          "height": 348,
+          "width": 375,
+          "viewportHeight": 812
+        },
+        "imagesProperlyScaled": true,
+        "cardsStackProperly": true,
+        "formsUsable": true,
+        "footerNavigable": false,
+        "touchFriendlySpacing": true
+      },
+      "issues": [
+        {
+          "type": "MEDIUM",
+          "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "type": "LOW",
+          "description": "Some footer links may be hard to tap on mobile",
+          "details": [
+            {
+              "text": "Fuel Systems",
+              "height": 19
+            },
+            {
+              "text": "Car Wash Systems",
+              "height": 19
+            },
+            {
+              "text": "Design & Engineering",
+              "height": 19
+            },
+            {
+              "text": "Remodels & Upgrades",
+              "height": 19
+            },
+            {
+              "text": "Testing & Compliance",
+              "height": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "legal-terms",
+      "url": "https://nwestco-v1-5.tandemtheory.com/legal/terms.html",
+      "tests": {
+        "pageLoads": true,
+        "noHorizontalScroll": true,
+        "hamburgerExists": true,
+        "menuOpens": "error",
+        "textReadable": true,
+        "tappableButtons": true,
+        "heroSection": {
+          "exists": true,
+          "height": 348,
+          "width": 375,
+          "viewportHeight": 812
+        },
+        "imagesProperlyScaled": true,
+        "cardsStackProperly": true,
+        "formsUsable": true,
+        "footerNavigable": false,
+        "touchFriendlySpacing": true
+      },
+      "issues": [
+        {
+          "type": "MEDIUM",
+          "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "type": "LOW",
+          "description": "Some footer links may be hard to tap on mobile",
+          "details": [
+            {
+              "text": "Fuel Systems",
+              "height": 19
+            },
+            {
+              "text": "Car Wash Systems",
+              "height": 19
+            },
+            {
+              "text": "Design & Engineering",
+              "height": 19
+            },
+            {
+              "text": "Remodels & Upgrades",
+              "height": 19
+            },
+            {
+              "text": "Testing & Compliance",
+              "height": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "legal-accessibility",
+      "url": "https://nwestco-v1-5.tandemtheory.com/legal/accessibility.html",
+      "tests": {
+        "pageLoads": true,
+        "noHorizontalScroll": true,
+        "hamburgerExists": true,
+        "menuOpens": "error",
+        "textReadable": true,
+        "tappableButtons": true,
+        "heroSection": {
+          "exists": true,
+          "height": 348,
+          "width": 375,
+          "viewportHeight": 812
+        },
+        "imagesProperlyScaled": true,
+        "cardsStackProperly": true,
+        "formsUsable": true,
+        "footerNavigable": false,
+        "touchFriendlySpacing": true
+      },
+      "issues": [
+        {
+          "type": "MEDIUM",
+          "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "type": "LOW",
+          "description": "Some footer links may be hard to tap on mobile",
+          "details": [
+            {
+              "text": "Fuel Systems",
+              "height": 19
+            },
+            {
+              "text": "Car Wash Systems",
+              "height": 19
+            },
+            {
+              "text": "Design & Engineering",
+              "height": 19
+            },
+            {
+              "text": "Remodels & Upgrades",
+              "height": 19
+            },
+            {
+              "text": "Testing & Compliance",
+              "height": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "news-new-office",
+      "url": "https://nwestco-v1-5.tandemtheory.com/news/new-office-location.html",
+      "tests": {
+        "pageLoads": false
+      },
+      "issues": [
+        {
+          "type": "CRITICAL",
+          "description": "Page failed to load: HTTP 404"
+        }
+      ]
+    },
+    {
+      "name": "news-industry-award",
+      "url": "https://nwestco-v1-5.tandemtheory.com/news/industry-award.html",
+      "tests": {
+        "pageLoads": false
+      },
+      "issues": [
+        {
+          "type": "CRITICAL",
+          "description": "Page failed to load: HTTP 404"
+        }
+      ]
+    },
+    {
+      "name": "news-epa-regulations",
+      "url": "https://nwestco-v1-5.tandemtheory.com/news/new-epa-regulations.html",
+      "tests": {
+        "pageLoads": false
+      },
+      "issues": [
+        {
+          "type": "CRITICAL",
+          "description": "Page failed to load: HTTP 404"
+        }
+      ]
+    },
+    {
+      "name": "news-partnership",
+      "url": "https://nwestco-v1-5.tandemtheory.com/news/partnership-announcement.html",
+      "tests": {
+        "pageLoads": false
+      },
+      "issues": [
+        {
+          "type": "CRITICAL",
+          "description": "Page failed to load: HTTP 404"
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "type": "MEDIUM",
+      "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "page": "homepage"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Found 10+ elements with font-size < 14px",
+      "details": [
+        {
+          "tag": "SPAN",
+          "fontSize": 12.8,
+          "text": "NEWS: Nwestco is excited to announce the acquisiti"
+        },
+        {
+          "tag": "A",
+          "fontSize": 12.8,
+          "text": "Read more →"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Design & Engineering"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Installation & Construction"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "24/7 Service & Maintenance"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": 12.8,
+          "text": "24/7"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Testing & Compliance"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Equipment Sales & Service"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Chemistry Programs"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Preventative Maintenance"
+        }
+      ],
+      "page": "homepage"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Some grid items may not be stacking properly on mobile",
+      "details": [
+        {
+          "gridIndex": 20,
+          "childrenCount": 4,
+          "firstChildWidth": 148
+        }
+      ],
+      "page": "homepage"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "page": "about"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Some grid items may not be stacking properly on mobile",
+      "details": [
+        {
+          "gridIndex": 0,
+          "childrenCount": 4,
+          "firstChildWidth": 148
+        }
+      ],
+      "page": "about"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "page": "careers"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Found 2+ buttons smaller than 44x44px tap target",
+      "details": [
+        {
+          "text": "Show Results",
+          "width": 124,
+          "height": 42
+        },
+        {
+          "text": "Reset Filters",
+          "width": 96,
+          "height": 42
+        }
+      ],
+      "page": "careers"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Some grid items may not be stacking properly on mobile",
+      "details": [
+        {
+          "gridIndex": 0,
+          "childrenCount": 4,
+          "firstChildWidth": 148
+        }
+      ],
+      "page": "careers"
+    },
+    {
+      "type": "LOW",
+      "description": "Some footer links may be hard to tap on mobile",
+      "details": [
+        {
+          "text": "Fuel Systems",
+          "height": 19
+        },
+        {
+          "text": "Car Wash Systems",
+          "height": 19
+        },
+        {
+          "text": "Design & Engineering",
+          "height": 19
+        },
+        {
+          "text": "Remodels & Upgrades",
+          "height": 19
+        },
+        {
+          "text": "Testing & Compliance",
+          "height": 19
+        }
+      ],
+      "page": "careers"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "page": "contact"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Some grid items may not be stacking properly on mobile",
+      "details": [
+        {
+          "gridIndex": 1,
+          "childrenCount": 4,
+          "firstChildWidth": 148
+        }
+      ],
+      "page": "contact"
+    },
+    {
+      "type": "LOW",
+      "description": "Some footer links may be hard to tap on mobile",
+      "details": [
+        {
+          "text": "Fuel Systems",
+          "height": 19
+        },
+        {
+          "text": "Car Wash Systems",
+          "height": 19
+        },
+        {
+          "text": "Design & Engineering",
+          "height": 19
+        },
+        {
+          "text": "Remodels & Upgrades",
+          "height": 19
+        },
+        {
+          "text": "Testing & Compliance",
+          "height": 19
+        }
+      ],
+      "page": "contact"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "page": "financing"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Some grid items may not be stacking properly on mobile",
+      "details": [
+        {
+          "gridIndex": 0,
+          "childrenCount": 3,
+          "firstChildWidth": 148
+        }
+      ],
+      "page": "financing"
+    },
+    {
+      "type": "LOW",
+      "description": "Some footer links may be hard to tap on mobile",
+      "details": [
+        {
+          "text": "Fuel Systems",
+          "height": 19
+        },
+        {
+          "text": "Car Wash Systems",
+          "height": 19
+        },
+        {
+          "text": "Design & Engineering",
+          "height": 19
+        },
+        {
+          "text": "Remodels & Upgrades",
+          "height": 19
+        },
+        {
+          "text": "Testing & Compliance",
+          "height": 19
+        }
+      ],
+      "page": "financing"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "page": "locations"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Found 10+ elements with font-size < 14px",
+      "details": [
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Toll Free: 800-339-9930"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Local: 661-631-3870"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Toll Free: 866-316-1099"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Local: 406-896-1099"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Fax: 406-896-8101"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Toll Free: 800-473-3558"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Local: 208-344-6483"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Fax: 208-344-6495"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Local: 303-825-8117"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Local: 925-551-7555"
+        }
+      ],
+      "page": "locations"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Some grid items may not be stacking properly on mobile",
+      "details": [
+        {
+          "gridIndex": 37,
+          "childrenCount": 4,
+          "firstChildWidth": 148
+        }
+      ],
+      "page": "locations"
+    },
+    {
+      "type": "LOW",
+      "description": "Some footer links may be hard to tap on mobile",
+      "details": [
+        {
+          "text": "Fuel Systems",
+          "height": 19
+        },
+        {
+          "text": "Car Wash Systems",
+          "height": 19
+        },
+        {
+          "text": "Design & Engineering",
+          "height": 19
+        },
+        {
+          "text": "Remodels & Upgrades",
+          "height": 19
+        },
+        {
+          "text": "Testing & Compliance",
+          "height": 19
+        }
+      ],
+      "page": "locations"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "page": "projects"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Some grid items may not be stacking properly on mobile",
+      "details": [
+        {
+          "gridIndex": 1,
+          "childrenCount": 4,
+          "firstChildWidth": 148
+        }
+      ],
+      "page": "projects"
+    },
+    {
+      "type": "LOW",
+      "description": "Some footer links may be hard to tap on mobile",
+      "details": [
+        {
+          "text": "Fuel Systems",
+          "height": 19
+        },
+        {
+          "text": "Car Wash Systems",
+          "height": 19
+        },
+        {
+          "text": "Design & Engineering",
+          "height": 19
+        },
+        {
+          "text": "Remodels & Upgrades",
+          "height": 19
+        },
+        {
+          "text": "Testing & Compliance",
+          "height": 19
+        }
+      ],
+      "page": "projects"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "page": "news"
+    },
+    {
+      "type": "LOW",
+      "description": "Some footer links may be hard to tap on mobile",
+      "details": [
+        {
+          "text": "Fuel Systems",
+          "height": 19
+        },
+        {
+          "text": "Car Wash Systems",
+          "height": 19
+        },
+        {
+          "text": "Design & Engineering",
+          "height": 19
+        },
+        {
+          "text": "Remodels & Upgrades",
+          "height": 19
+        },
+        {
+          "text": "Testing & Compliance",
+          "height": 19
+        }
+      ],
+      "page": "news"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "page": "market-fuel-systems"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Found 10+ elements with font-size < 14px",
+      "details": [
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Multi-product dispensing"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "EMV payment integration"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "POS connectivity"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "High-volume optimization"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Fleet management systems"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Access control"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Automated fuel tracking"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Bulk storage solutions"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Marine dispensing equipment"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Spill containment"
+        }
+      ],
+      "page": "market-fuel-systems"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Some grid items may not be stacking properly on mobile",
+      "details": [
+        {
+          "gridIndex": 22,
+          "childrenCount": 4,
+          "firstChildWidth": 148
+        },
+        {
+          "gridIndex": 23,
+          "childrenCount": 8,
+          "firstChildWidth": 160
+        }
+      ],
+      "page": "market-fuel-systems"
+    },
+    {
+      "type": "LOW",
+      "description": "Some footer links may be hard to tap on mobile",
+      "details": [
+        {
+          "text": "Fuel Systems",
+          "height": 19
+        },
+        {
+          "text": "Car Wash Systems",
+          "height": 19
+        },
+        {
+          "text": "Design & Engineering",
+          "height": 19
+        },
+        {
+          "text": "Remodels & Upgrades",
+          "height": 19
+        },
+        {
+          "text": "Testing & Compliance",
+          "height": 19
+        }
+      ],
+      "page": "market-fuel-systems"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "page": "market-car-wash"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Found 10+ elements with font-size < 14px",
+      "details": [
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Express exterior tunnels"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Full-service tunnels"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Flex-serve hybrid systems"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "150+ cars/hour capacity"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Touchless friction-free"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Soft-touch systems"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Hybrid touch/touchless"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Space-efficient design"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "High-pressure systems"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Foam brush stations"
+        }
+      ],
+      "page": "market-car-wash"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Some grid items may not be stacking properly on mobile",
+      "details": [
+        {
+          "gridIndex": 22,
+          "childrenCount": 4,
+          "firstChildWidth": 148
+        },
+        {
+          "gridIndex": 23,
+          "childrenCount": 8,
+          "firstChildWidth": 160
+        }
+      ],
+      "page": "market-car-wash"
+    },
+    {
+      "type": "LOW",
+      "description": "Some footer links may be hard to tap on mobile",
+      "details": [
+        {
+          "text": "Fuel Systems",
+          "height": 19
+        },
+        {
+          "text": "Car Wash Systems",
+          "height": 19
+        },
+        {
+          "text": "Design & Engineering",
+          "height": 19
+        },
+        {
+          "text": "Remodels & Upgrades",
+          "height": 19
+        },
+        {
+          "text": "Testing & Compliance",
+          "height": 19
+        }
+      ],
+      "page": "market-car-wash"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "page": "market-environmental"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Found 10+ elements with font-size < 14px",
+      "details": [
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Precision tank testing"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Line leak detection"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Spill bucket testing"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Overfill protection"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "ATG system installation"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Interstitial monitoring"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Groundwater monitoring"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Vapor monitoring"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Compliance documentation"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Regulatory reporting"
+        }
+      ],
+      "page": "market-environmental"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Some grid items may not be stacking properly on mobile",
+      "details": [
+        {
+          "gridIndex": 22,
+          "childrenCount": 4,
+          "firstChildWidth": 148
+        },
+        {
+          "gridIndex": 23,
+          "childrenCount": 8,
+          "firstChildWidth": 160
+        }
+      ],
+      "page": "market-environmental"
+    },
+    {
+      "type": "LOW",
+      "description": "Some footer links may be hard to tap on mobile",
+      "details": [
+        {
+          "text": "Fuel Systems",
+          "height": 19
+        },
+        {
+          "text": "Car Wash Systems",
+          "height": 19
+        },
+        {
+          "text": "Design & Engineering",
+          "height": 19
+        },
+        {
+          "text": "Remodels & Upgrades",
+          "height": 19
+        },
+        {
+          "text": "Testing & Compliance",
+          "height": 19
+        }
+      ],
+      "page": "market-environmental"
+    },
+    {
+      "type": "CRITICAL",
+      "description": "Page failed to load: HTTP 404",
+      "page": "service-construction"
+    },
+    {
+      "type": "CRITICAL",
+      "description": "Page failed to load: HTTP 404",
+      "page": "service-compliance"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "page": "service-service-maintenance"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Found 10+ elements with font-size < 14px",
+      "details": [
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "4-hour average response"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Nights and weekends"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Holidays included"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "No overtime surprises"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Custom PM schedules"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Manufacturer specs"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Complete documentation"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Trend analysis"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "Dispensers and pumps"
+        },
+        {
+          "tag": "LI",
+          "fontSize": 12.8,
+          "text": "ATG and monitoring"
+        }
+      ],
+      "page": "service-service-maintenance"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Some grid items may not be stacking properly on mobile",
+      "details": [
+        {
+          "gridIndex": 20,
+          "childrenCount": 4,
+          "firstChildWidth": 148
+        }
+      ],
+      "page": "service-service-maintenance"
+    },
+    {
+      "type": "LOW",
+      "description": "Some footer links may be hard to tap on mobile",
+      "details": [
+        {
+          "text": "Fuel Systems",
+          "height": 19
+        },
+        {
+          "text": "Car Wash Systems",
+          "height": 19
+        },
+        {
+          "text": "Design & Engineering",
+          "height": 19
+        },
+        {
+          "text": "Remodels & Upgrades",
+          "height": 19
+        },
+        {
+          "text": "Testing & Compliance",
+          "height": 19
+        }
+      ],
+      "page": "service-service-maintenance"
+    },
+    {
+      "type": "CRITICAL",
+      "description": "Page failed to load: HTTP 404",
+      "page": "service-emergency"
+    },
+    {
+      "type": "CRITICAL",
+      "description": "Page failed to load: HTTP 404",
+      "page": "service-equipment-sales"
+    },
+    {
+      "type": "CRITICAL",
+      "description": "Page failed to load: HTTP 404",
+      "page": "service-testing"
+    },
+    {
+      "type": "CRITICAL",
+      "description": "Page failed to load: HTTP 404",
+      "page": "service-fleet-fueling"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "page": "legal-privacy"
+    },
+    {
+      "type": "LOW",
+      "description": "Some footer links may be hard to tap on mobile",
+      "details": [
+        {
+          "text": "Fuel Systems",
+          "height": 19
+        },
+        {
+          "text": "Car Wash Systems",
+          "height": 19
+        },
+        {
+          "text": "Design & Engineering",
+          "height": 19
+        },
+        {
+          "text": "Remodels & Upgrades",
+          "height": 19
+        },
+        {
+          "text": "Testing & Compliance",
+          "height": 19
+        }
+      ],
+      "page": "legal-privacy"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "page": "legal-terms"
+    },
+    {
+      "type": "LOW",
+      "description": "Some footer links may be hard to tap on mobile",
+      "details": [
+        {
+          "text": "Fuel Systems",
+          "height": 19
+        },
+        {
+          "text": "Car Wash Systems",
+          "height": 19
+        },
+        {
+          "text": "Design & Engineering",
+          "height": 19
+        },
+        {
+          "text": "Remodels & Upgrades",
+          "height": 19
+        },
+        {
+          "text": "Testing & Compliance",
+          "height": 19
+        }
+      ],
+      "page": "legal-terms"
+    },
+    {
+      "type": "MEDIUM",
+      "description": "Menu interaction error: elementHandle.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "page": "legal-accessibility"
+    },
+    {
+      "type": "LOW",
+      "description": "Some footer links may be hard to tap on mobile",
+      "details": [
+        {
+          "text": "Fuel Systems",
+          "height": 19
+        },
+        {
+          "text": "Car Wash Systems",
+          "height": 19
+        },
+        {
+          "text": "Design & Engineering",
+          "height": 19
+        },
+        {
+          "text": "Remodels & Upgrades",
+          "height": 19
+        },
+        {
+          "text": "Testing & Compliance",
+          "height": 19
+        }
+      ],
+      "page": "legal-accessibility"
+    },
+    {
+      "type": "CRITICAL",
+      "description": "Page failed to load: HTTP 404",
+      "page": "news-new-office"
+    },
+    {
+      "type": "CRITICAL",
+      "description": "Page failed to load: HTTP 404",
+      "page": "news-industry-award"
+    },
+    {
+      "type": "CRITICAL",
+      "description": "Page failed to load: HTTP 404",
+      "page": "news-epa-regulations"
+    },
+    {
+      "type": "CRITICAL",
+      "description": "Page failed to load: HTTP 404",
+      "page": "news-partnership"
+    }
+  ],
+  "summary": {
+    "totalPages": 25,
+    "pagesWithIssues": 25,
+    "totalIssues": 56,
+    "critical": 10,
+    "high": 0,
+    "medium": 33,
+    "low": 13
+  }
+}
