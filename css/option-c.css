@@ -16,8 +16,8 @@
   color: var(--nwestco-white);
   padding: 0.75rem 0;
   text-align: center;
-  position: relative; /* Changed from fixed - now scrolls naturally */
-  z-index: 250;
+  position: relative;
+  z-index: 350; /* Above header (300) for consistent cross-browser stacking */
 }
 
 .announcement-banner .container {
