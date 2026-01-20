@@ -71,6 +71,250 @@
   }
 }
 
+/* Hidden state for announcement banner */
+.announcement-banner.hidden {
+  display: none;
+}
+
+
+/* ============================================================
+   EMERGENCY BANNER - Red emergency spill response banner
+   ============================================================ */
+
+.emergency-banner {
+  background: linear-gradient(135deg, #B91C1C 0%, #991B1B 50%, #7F1D1D 100%);
+  color: #ffffff;
+  padding: 0.875rem 0;
+  position: relative;
+  z-index: 400;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid #FCA5A5;
+}
+
+.emergency-banner.hidden {
+  display: none;
+}
+
+.emergency-banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.emergency-banner__content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.emergency-banner__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: emergency-pulse 2s ease-in-out infinite;
+}
+
+.emergency-banner__icon svg {
+  color: #FEE2E2;
+}
+
+@keyframes emergency-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
+  }
+}
+
+.emergency-banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.emergency-banner__label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FEE2E2;
+}
+
+.emergency-banner__message {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.emergency-banner__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ffffff;
+  color: #B91C1C;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.emergency-banner__cta:hover,
+.emergency-banner__cta:focus {
+  background: #FEE2E2;
+  color: #7F1D1D;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.emergency-banner__cta:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.emergency-banner__cta svg {
+  flex-shrink: 0;
+}
+
+.emergency-banner__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.emergency-banner__close:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.emergency-banner__close:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .emergency-banner {
+    padding: 0.75rem 0;
+  }
+
+  .emergency-banner .container {
+    flex-wrap: wrap;
+  }
+
+  .emergency-banner__content {
+    gap: 0.75rem;
+  }
+
+  .emergency-banner__icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .emergency-banner__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .emergency-banner__text {
+    min-width: 180px;
+  }
+
+  .emergency-banner__label {
+    font-size: 0.6875rem;
+  }
+
+  .emergency-banner__message {
+    font-size: 0.875rem;
+  }
+
+  .emergency-banner__cta {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .emergency-banner .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .emergency-banner__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+  }
+
+  .emergency-banner__icon {
+    display: none;
+  }
+
+  .emergency-banner__text {
+    width: 100%;
+  }
+
+  .emergency-banner__cta {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+  }
+
+  .emergency-banner__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .emergency-banner__icon {
+    animation: none;
+  }
+
+  .emergency-banner__cta,
+  .emergency-banner__close {
+    transition: none;
+  }
+}
+
+@media print {
+  .emergency-banner {
+    display: none !important;
+  }
+}
+
 
 /* ============================================================
    SKIP NAVIGATION - Accessibility

@@ -774,7 +774,8 @@
 
 
   /**
-   * ANNOUNCEMENT BANNER
+   * ANNOUNCEMENT BANNER (News - blue)
+   * Uses sessionStorage - dismissed for current session only
    */
 
   function initAnnouncementBanner() {
@@ -783,17 +784,89 @@
 
     if (!banner || !closeBtn) return;
 
-    closeBtn.addEventListener('click', () => {
-      banner.style.display = 'none';
-      // Optionally save to sessionStorage so it stays closed during the session
-      sessionStorage.setItem('bannerClosed', 'true');
-    });
-
     // Check if banner was previously closed in this session
-    if (sessionStorage.getItem('bannerClosed') === 'true') {
-      banner.style.display = 'none';
+    if (sessionStorage.getItem('announcementBannerClosed') === 'true') {
+      banner.classList.add('hidden');
+      return;
     }
+
+    closeBtn.addEventListener('click', () => {
+      banner.classList.add('hidden');
+      sessionStorage.setItem('announcementBannerClosed', 'true');
+    });
   }
+
+
+  /**
+   * EMERGENCY BANNER (Spill Response - red)
+   * Uses localStorage with 24-hour expiration
+   */
+
+  function initEmergencyBanner() {
+    const banner = document.getElementById('emergency-banner');
+    const closeBtn = banner ? banner.querySelector('.emergency-banner__close') : null;
+    const STORAGE_KEY = 'emergencyBannerDismissed';
+    const DISMISS_HOURS = 24;
+
+    if (!banner) return;
+
+    // Check if previously dismissed and still within time window
+    function isDismissed() {
+      try {
+        const data = localStorage.getItem(STORAGE_KEY);
+        if (!data) return false;
+
+        const { timestamp } = JSON.parse(data);
+        const hoursSince = (Date.now() - timestamp) / (1000 * 60 * 60);
+
+        if (hoursSince >= DISMISS_HOURS) {
+          localStorage.removeItem(STORAGE_KEY);
+          return false;
+        }
+        return true;
+      } catch (e) {
+        return false;
+      }
+    }
+
+    // Hide if previously dismissed
+    if (isDismissed()) {
+      banner.classList.add('hidden');
+      return;
+    }
+
+    // Set up close button
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        banner.classList.add('hidden');
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify({ timestamp: Date.now() }));
+        } catch (e) {
+          // localStorage unavailable
+        }
+      });
+    }
+
+    // Allow Escape key to dismiss
+    banner.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeBtn?.click();
+      }
+    });
+  }
+
+  // Expose for testing/debugging
+  window.NwEmergencyBanner = {
+    clearDismissal: function() {
+      localStorage.removeItem('emergencyBannerDismissed');
+      const banner = document.getElementById('emergency-banner');
+      if (banner) banner.classList.remove('hidden');
+    },
+    dismiss: function() {
+      const closeBtn = document.querySelector('.emergency-banner__close');
+      if (closeBtn) closeBtn.click();
+    }
+  };
 
 
   /**
@@ -804,6 +877,7 @@
     console.log('Initializing Option C interactive features...');
 
     // Core functionality
+    initEmergencyBanner();
     initAnnouncementBanner();
     initMobileMenu();
     initDesktopNav();
