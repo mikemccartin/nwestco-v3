@@ -1315,6 +1315,142 @@
 
 
 /* ============================================================
+   9-STATE TIMELINE - Compact layout for 9 states
+   ============================================================ */
+
+.timeline-9-states {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 3rem 0;
+  position: relative;
+  gap: 0.5rem;
+}
+
+.timeline-9-states::before {
+  content: "";
+  position: absolute;
+  top: 24px; /* Center of 48px dots */
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.timeline-9-states .timeline-point {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.timeline-9-states .timeline-dot {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--nwestco-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--nwestco-white);
+  font-weight: var(--font-bold);
+  font-size: 0.8125rem;
+  margin: 0 auto;
+}
+
+.timeline-9-states .timeline-dot:hover,
+.timeline-9-states .timeline-dot.active {
+  background: var(--nwestco-green);
+  border-color: var(--nwestco-green);
+  color: var(--nwestco-white);
+  transform: scale(1.15);
+  box-shadow: 0 0 0 4px rgba(112, 153, 68, 0.4);
+}
+
+.timeline-9-states .timeline-label {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.625rem;
+  font-weight: var(--font-semibold);
+  max-width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* Tablet: 2-row grid layout */
+@media (max-width: 1024px) {
+  .timeline-9-states {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem 1rem;
+  }
+
+  .timeline-9-states::before {
+    display: none;
+  }
+
+  .timeline-9-states .timeline-point:nth-child(n+6) {
+    /* Second row items */
+  }
+
+  .timeline-9-states .timeline-label {
+    font-size: 0.6875rem;
+    max-width: 80px;
+  }
+}
+
+/* Mobile: Vertical layout */
+@media (max-width: 768px) {
+  .timeline-9-states {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem 1rem;
+  }
+
+  .timeline-9-states .timeline-dot {
+    width: 44px;
+    height: 44px;
+    font-size: 0.75rem;
+  }
+
+  .timeline-9-states .timeline-label {
+    font-size: 0.625rem;
+    max-width: 70px;
+  }
+}
+
+/* Small mobile: 3-column grid */
+@media (max-width: 480px) {
+  .timeline-9-states {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem 0.75rem;
+  }
+
+  .timeline-9-states .timeline-dot {
+    width: 40px;
+    height: 40px;
+    font-size: 0.6875rem;
+    border-width: 2px;
+  }
+
+  .timeline-9-states .timeline-label {
+    font-size: 0.5625rem;
+    max-width: 60px;
+    margin-top: 0.5rem;
+  }
+}
+
+
+/* ============================================================
    WHY NWESTCO - Split Screen
    ============================================================ */
 
