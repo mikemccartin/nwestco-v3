@@ -16,11 +16,8 @@
   color: var(--nwestco-white);
   padding: 0.75rem 0;
   text-align: center;
-  position: fixed;
-  top: 107px; /* Below the fixed header (logo 75px + padding 32px) */
-  left: 0;
-  right: 0;
-  z-index: 250; /* Below header (300) but above content */
+  position: relative; /* Changed from fixed - now scrolls naturally */
+  z-index: 250;
 }
 
 .announcement-banner .container {
