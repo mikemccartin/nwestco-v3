@@ -1,0 +1,290 @@
+/**
+ * EMERGENCY SPILL RESPONSE BANNER
+ * Nwestco - Homepage Only
+ *
+ * All classes prefixed with .nw-emergency-banner to avoid conflicts
+ * with existing WordPress styles.
+ *
+ * WordPress Integration:
+ * - Add to theme's style.css or create custom CSS file
+ * - Enqueue via wp_enqueue_style() in functions.php
+ * - Or paste into WordPress Customizer > Additional CSS
+ */
+
+/* ============================================================
+   BANNER CONTAINER
+   Position: Static (scrolls with page content)
+   ============================================================ */
+
+.nw-emergency-banner {
+  background: linear-gradient(135deg, #B91C1C 0%, #991B1B 50%, #7F1D1D 100%);
+  color: #ffffff;
+  padding: 0.875rem 0;
+  position: relative;
+  z-index: 400; /* Above header (300) when visible */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid #FCA5A5;
+}
+
+/* Hidden state when dismissed */
+.nw-emergency-banner.nw-emergency-banner--hidden {
+  display: none;
+}
+
+/* ============================================================
+   CONTAINER - Content wrapper
+   ============================================================ */
+
+.nw-emergency-banner__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* ============================================================
+   CONTENT - Icon, text, and CTA
+   ============================================================ */
+
+.nw-emergency-banner__content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+/* Warning Icon */
+.nw-emergency-banner__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: nw-emergency-pulse 2s ease-in-out infinite;
+}
+
+.nw-emergency-banner__icon svg {
+  color: #FEE2E2;
+}
+
+@keyframes nw-emergency-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
+  }
+}
+
+/* Text Content */
+.nw-emergency-banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.nw-emergency-banner__label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FEE2E2;
+}
+
+.nw-emergency-banner__message {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+/* ============================================================
+   CALL TO ACTION BUTTON
+   ============================================================ */
+
+.nw-emergency-banner__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ffffff;
+  color: #B91C1C;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.nw-emergency-banner__cta:hover,
+.nw-emergency-banner__cta:focus {
+  background: #FEE2E2;
+  color: #7F1D1D;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.nw-emergency-banner__cta:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.nw-emergency-banner__cta svg {
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   CLOSE BUTTON
+   ============================================================ */
+
+.nw-emergency-banner__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.nw-emergency-banner__close:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.nw-emergency-banner__close:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   RESPONSIVE - Tablet (768px and below)
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .nw-emergency-banner {
+    padding: 0.75rem 0;
+  }
+
+  .nw-emergency-banner__container {
+    padding: 0 1rem;
+    flex-wrap: wrap;
+  }
+
+  .nw-emergency-banner__content {
+    gap: 0.75rem;
+  }
+
+  .nw-emergency-banner__icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .nw-emergency-banner__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nw-emergency-banner__text {
+    min-width: 180px;
+  }
+
+  .nw-emergency-banner__label {
+    font-size: 0.6875rem;
+  }
+
+  .nw-emergency-banner__message {
+    font-size: 0.875rem;
+  }
+
+  .nw-emergency-banner__cta {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* ============================================================
+   RESPONSIVE - Mobile (480px and below)
+   ============================================================ */
+
+@media (max-width: 480px) {
+  .nw-emergency-banner__container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .nw-emergency-banner__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+  }
+
+  .nw-emergency-banner__icon {
+    display: none; /* Hide icon on very small screens to save space */
+  }
+
+  .nw-emergency-banner__text {
+    width: 100%;
+  }
+
+  .nw-emergency-banner__cta {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+  }
+
+  .nw-emergency-banner__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* ============================================================
+   ACCESSIBILITY - Reduced Motion
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .nw-emergency-banner__icon {
+    animation: none;
+  }
+
+  .nw-emergency-banner__cta,
+  .nw-emergency-banner__close {
+    transition: none;
+  }
+}
+
+/* ============================================================
+   PRINT STYLES - Hide banner in print
+   ============================================================ */
+
+@media print {
+  .nw-emergency-banner {
+    display: none !important;
+  }
+}

@@ -27,10 +27,46 @@
 
   <!-- Option C Specific Styles -->
   <link rel="stylesheet" href="css/option-c.css">
+  <!-- Emergency Banner Styles -->
+  <link rel="stylesheet" href="components/emergency-banner/emergency-banner.css">
   <!-- BugHerd QA Tracking -->
   <script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=zb2b4odpfibiskidt9myaq" async="true"></script>
 </head>
 <body>
+  <!-- Emergency Spill Response Banner - Homepage Only -->
+  <div class="nw-emergency-banner" id="nw-emergency-banner" role="alert" aria-live="polite">
+    <div class="nw-emergency-banner__container">
+      <div class="nw-emergency-banner__content">
+        <span class="nw-emergency-banner__icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 9V13M12 17H12.01M12 3L2 21H22L12 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="nw-emergency-banner__text">
+          <strong class="nw-emergency-banner__label">EMERGENCY SPILL RESPONSE</strong>
+          <span class="nw-emergency-banner__message">24/7 rapid response for fuel spills and environmental emergencies.</span>
+        </span>
+        <a href="tel:8007751892" class="nw-emergency-banner__cta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          <span>Call Now: 800-775-1892</span>
+        </a>
+      </div>
+      <button
+        type="button"
+        class="nw-emergency-banner__close"
+        aria-label="Dismiss emergency banner"
+        onclick="NwEmergencyBanner.dismiss()"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+
   <!-- Skip Navigation for Accessibility -->
   <a href="#main-content" class="skip-nav">Skip to main content</a>
 
@@ -1084,5 +1120,7 @@
   <!-- Scripts -->
   <script src="assets/js/main.js"></script>
   <script src="js/option-c.js"></script>
+  <!-- Emergency Banner JavaScript -->
+  <script src="components/emergency-banner/emergency-banner.js"></script>
 </body>
 </html>
